@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-title: "Grandstander", sans-serif;
+  --ff-text: "Geist", sans-serif;
+  
+  --clr-bg: #ffffff;
+  --clr-maintitle: #407cca;
+  --clr-title: #009d4e;
+  --clr-maintext: #717271;
+  
+  --clr-lightbg: #00afaa;
+  --clr-lighttitle: #ffffff;
+  --clr-lighttext: #ffffff;
+  
+  --clr-darkbg: #717271;
+  --clr-darktitle: #ffffff;
+  --clr-darktext: #ffffff;
+  
+  --clr-accent1: #ff9e16;
+  --clr-accent2: #ea1d76;
+  
+  --clr-aux1: #95dacf;
+  --clr-aux2: #6ecb98;
+}
+
+body {
+  background-color: var(--clr-bg);
+  font-family: var(--ff-text);
+  color: var(--clr-text);
+}
+
+/* es para mantener abajo el footer d dinamico s small l large*/
+.wrapped {
+  min-height: 100dvh; 
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-title);
+  color: var(--clr-maintitle);
+  margin: 0;
+}
+
+p, a {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bgNav {
+  background-color: var(--clr-bg);
+  font-family: var(--ff-title);
+}
+
+.bgNav .navbar-nav .nav-link.colorBase {
+  color: var(--clr-title);
+}
+
+.bgNav .navbar-nav .nav-link.colorBase:hover {
+  border-top: 5px solid var(--clr-title);
+  border-bottom: 5px solid var(--clr-title);
+  border-radius: 20%;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  font-weight: bold;
+}
+.bgNav .navbar-nav .nav-link.colorSeleccion {
+  color: var(--clr-title);
+  font-weight: bold;
+}
+.bgNav .navbar-nav .nav-link.colorSeleccion:hover {
+  border-top: 5px solid var(--clr-title);
+  border-bottom: 5px solid var(--clr-title);
+  border-radius: 20%;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
