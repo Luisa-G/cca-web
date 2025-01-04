@@ -10,30 +10,22 @@
   --ff-title: "Grandstander", sans-serif;
   --ff-text: "Geist", sans-serif;
   
-  --clr-bg: #ffffff;
-  --clr-maintitle: #407cca;
-  --clr-title: #009d4e;
-  --clr-maintext: #717271;
-  
-  --clr-lightbg: #00afaa;
-  --clr-lighttitle: #ffffff;
-  --clr-lighttext: #ffffff;
-  
-  --clr-darkbg: #717271;
-  --clr-darktitle: #ffffff;
-  --clr-darktext: #ffffff;
-  
-  --clr-accent1: #ff9e16;
-  --clr-accent2: #ea1d76;
-  
+  --clr-white: #ffffff;
+  --clr-mainblue: #407cca;
+  --clr-maingreen: #009d4e;
+  --clr-maingrey: #717271;
+
   --clr-aux1: #95dacf;
   --clr-aux2: #6ecb98;
+  --clr-aux3: #00afaa;
+  --clr-accent1: #ff9e16;
+  --clr-accent2: #ea1d76;
 }
 
 body {
-  background-color: var(--clr-bg);
+  background-color: var(--clr-white);
   font-family: var(--ff-text);
-  color: var(--clr-text);
+  color: var(--clr-maingrey);
 }
 
 /* es para mantener abajo el footer d dinamico s small l large*/
@@ -45,7 +37,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ff-title);
-  color: var(--clr-maintitle);
   margin: 0;
 }
 
@@ -53,39 +44,79 @@ p, a {
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
 }
 
 .bgNav {
-  background-color: var(--clr-bg);
+  background-color: var(--clr-white);
   font-family: var(--ff-title);
 }
 
 .bgNav .navbar-nav .nav-link.colorBase {
-  color: var(--clr-title);
+  color: var(--clr-maingreen);
 }
 
 .bgNav .navbar-nav .nav-link.colorBase:hover {
-  border-top: 5px solid var(--clr-title);
-  border-bottom: 5px solid var(--clr-title);
+  border-top: 5px solid var(--clr-maingreen);
+  border-bottom: 5px solid var(--clr-maingreen);
   border-radius: 20%;
   margin-top: -5px;
   margin-bottom: -5px;
   font-weight: bold;
 }
 .bgNav .navbar-nav .nav-link.colorSeleccion {
-  color: var(--clr-title);
+  color: var(--clr-maingreen);
   font-weight: bold;
 }
 .bgNav .navbar-nav .nav-link.colorSeleccion:hover {
-  border-top: 5px solid var(--clr-title);
-  border-bottom: 5px solid var(--clr-title);
+  border-top: 5px solid var(--clr-maingreen);
+  border-bottom: 5px solid var(--clr-maingreen);
   border-radius: 20%;
   margin-top: -5px;
   margin-bottom: -5px;
+}
+
+
+.section-dark {
+  background-color: var(--clr-mainblue);
+  color: var(--clr-white)
+}
+
+footer {
+  text-align: center;
+}
+
+
+
+footer .logo {
+  padding-top: 15px;
+  width: 140px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social i {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+}
+
+.listado {
+  display: flex;
+  justify-content: center;
 }
