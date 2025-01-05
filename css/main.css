@@ -9,7 +9,7 @@
 :root {
   --ff-title: "Grandstander", sans-serif;
   --ff-text: "Geist", sans-serif;
-  
+
   --clr-white: #ffffff;
   --clr-mainblue: #407cca;
   --clr-maingreen: #009d4e;
@@ -28,11 +28,17 @@ body {
   color: var(--clr-maingrey);
 }
 
-/* es para mantener abajo el footer d dinamico s small l large*/
-.wrapped {
-  min-height: 100dvh; 
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,42 +46,139 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-p, a {
-  margin: 0;
+.espaciado {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 2rem;
 }
 
-a {
-  text-decoration: none;
-}
 
-.bgNav {
-  background-color: var(--clr-white);
+/* header */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  color: var(--clr-maingreen);
   font-family: var(--ff-title);
+  font-size: 1.2rem;
 }
 
-.bgNav .navbar-nav .nav-link.colorBase {
+.logo {
+  max-width: 15rem;
+}
+
+.nav-list {
+  display:flex;
+  gap: 1rem;
+}
+
+.nav-link, .dropdown .nav-link {
+  position: relative;
+  width: max-content;
+  padding: 5px;
+}
+
+.nav-link::after, .dropdown .nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-maingreen);
+  height: 0;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.nav-link:hover, .dropdown .nav-link:hover {
+  color: var(--clr-white);
+  font-weight: bold;
+}
+
+.nav-link:hover::after, .dropdown .nav-link:hover::after {
+  height: 100%;
+  width: 100%;
+  border-radius: 15%;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  font-family: var(--ff-text);
+}
+
+.dropdown>.dropdown-toggle:active {
+  /* Without this, clicking will make it sticky */
+  pointer-events: none;
+} 
+
+.dropdown-toggle:after {
+  margin: 0;
+  border:0;
+
+}
+
+.dropdown-text {
   color: var(--clr-maingreen);
 }
 
-.bgNav .navbar-nav .nav-link.colorBase:hover {
-  border-top: 5px solid var(--clr-maingreen);
-  border-bottom: 5px solid var(--clr-maingreen);
-  border-radius: 20%;
-  margin-top: -5px;
-  margin-bottom: -5px;
+.seleccion {
   font-weight: bold;
 }
-.bgNav .navbar-nav .nav-link.colorSeleccion {
-  color: var(--clr-maingreen);
+
+
+
+/* 
+.nav-link-dropdown {
+  position: relative;
+  width: max-content;
+  padding: 5px;
+}
+
+.nav-link-dropdown::after {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-maingreen);
+  height: 0;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.nav-link-dropdown:hover {
+  color: var(--clr-white);
   font-weight: bold;
 }
-.bgNav .navbar-nav .nav-link.colorSeleccion:hover {
-  border-top: 5px solid var(--clr-maingreen);
-  border-bottom: 5px solid var(--clr-maingreen);
-  border-radius: 20%;
-  margin-top: -5px;
-  margin-bottom: -5px;
+
+.nav-link-dropdown:hover::after {
+  height: 100%;
+  width: 100%;
 }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* general */
+
 
 
 .section-dark {
@@ -83,40 +186,64 @@ a {
   color: var(--clr-white)
 }
 
-footer {
+
+/* wrapper es para mantener el footer abajo */
+
+.wrapper {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* footer */
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "social logo donar"
+    "cierre cierre cierre";
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-size: 1rem;
+  padding-block: 1rem;
+}
+
+.footer-social {
+  grid-area: social;
+}
+
+.footer-social a {
+  font-size: 2rem;
+  padding: 0.35rem;
+}
+
+.footer-logo {
+  grid-area: logo;
+}
+
+.footer-logo .logo {
+  width: 40%;
+}
+
+.footer-donar {
+  grid-area: donar;
+}
+
+.footer-cierre {
+  grid-area: cierre;
 }
 
 
 
-footer .logo {
-  padding-top: 15px;
-  width: 140px;
-}
 
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
 
-.social i {
-  color: var(--clr-white);
-  font-size: 1.5rem;
-}
 
-ul {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-}
 
-li {
-  list-style: none;
-  text-align: left;
-}
 
-.listado {
-  display: flex;
-  justify-content: center;
-}
+
+
+
+
+

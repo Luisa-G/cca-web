@@ -10,44 +10,72 @@
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-  <div class="wrapped">
-    <header>
-      <nav class="navbar navbar-expand-lg bgNav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../assets/img/logo-hor-2t.png" alt="logo horizontal CCA" width="300" height="106">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center fs-5">
-              <li class="nav-item">
-                <a class="nav-link colorBase" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link colorBase" href="../pages/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link colorBase" href="../pages/metodologia.html">Metodología</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link colorBase" href="../pages/que-hacemos.html">Qué hacemos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active colorSeleccion" href="#">Comunidad</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <div class="wrapper">
+    <header class="main-header">
+      <img src="../assets/img/logo-hor-2t.png" alt="logo horizontal CCA" class="logo">
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="../pages/nosotros.html" class="nav-link">Nosotros</a></li>
+          <li class="nav-item active seleccion"><a href="../pages/metodologia.html" class="nav-link">Metodología</a></li>
+          <li class="nav-item"><a href="../pages/que-hacemos.html" class="nav-link">Qué hacemos</a></li>
+          
+          
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Misión y visión</a></li>
+                <li><a class="dropdown-item" href="#">Historia</a></li>
+                <li><a class="dropdown-item" href="#">Equipo de trabajo</a></li>
+              </ul>
+            </div>
+          </li>
+
+
+
+        </ul>
       </nav>
     </header>
     <main>
-      <h1>Comunidad</h1>
+      <div class="espaciado">
+        <h1>Comunidad</h1>
+        <p>hola gola hola hola gola hola hola gola hola hola gola hola hola gola hola</p>
+        <p>hola gola hola hola gola hola hola gola hola hola gola hola hola gola hola</p>
+        
+
+
+        <h1>aquí termina el relleno</h1>
+      </div>
     </main>
     <footer class="section-dark">
+      <div class="espaciado">
+        <div class="footer-inner">
+          <div class="footer-social">
+            <a href="https://www.instagram.com/culturambiental.mx/" target="_blank"><i class="bi bi-instagram"></i></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+            <p class="mt-1 mb-3">culturambiental.mx@gmail.com</p>
+          </div>
+          <div class="footer-logo">
+            <a href="../index.html">
+              <img class="logo" src="../assets/img/logo-pref-b.png" alt="Logo preferente CCA">
+            </a> 
+          </div>
+          <div class="footer-donar">
+            <p>Donar</p>
+          </div>
+          <div class="footer-cierre">
+            &copy; Todos los derechos reservados
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
