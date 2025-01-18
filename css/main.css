@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 0rem 2rem;
   color: var(--clr-maingreen);
   background-color: var(--clr-white);
   font-family: var(--ff-title);
@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   position: sticky;
   z-index: 99999;
+  border-bottom: 1.5px solid var(--clr-maingreen);
 }
 
 .main-header .logo {
@@ -75,7 +76,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-list {
-  display:flex;
+  margin: 0;
+  display: flex;
   gap: 1rem;
 }
 
@@ -120,9 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-toggle:after {
   margin: 0;
-  border:0;
-
-
+  border: 0;
 }
 
 .dropdown-text {
@@ -160,23 +160,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
   padding-block: 1rem;
-  scroll-margin-top: 10rem;
+  /* scroll-margin-top: 10rem; */
 }
 
 .section-dark {
   background-color: var(--clr-mainblue);
   color: var(--clr-white);
   padding-block: 1rem;
-  scroll-margin-top: 10rem;
+  /* scroll-margin-top: 10rem; */
 }
 
+.titulo-pag {
+  background-color: var(--clr-mainblue);
+  color: var(--clr-white);
+  align-items: center;
+  text-align: center;
+  padding-block: 0.5rem;
+}
 
 #intro {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 #intro .logo {
