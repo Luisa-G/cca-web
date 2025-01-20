@@ -188,8 +188,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .listado {
-  list-style: circle;
+  display: list-item;
+  list-style: disc;
+  text-align: left;
 }
+
+
+
+
+
+a.button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: var(--clr-white);
+  background-color: var(--clr-aux1);
+}
+
+
+
 
 #intro {
   justify-content: space-between;
@@ -219,6 +236,40 @@ h1, h2, h3, h4, h5, h6 {
   max-width:45rem;
 }
 
+
+
+.resultados-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "escuelas fraccionamientos empresas"
+    "todos todos todos";
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+  font-size: 1rem;
+  padding-block: 1rem;
+}
+
+.res-escuelas {
+  grid-area: escuelas;
+}
+
+.res-fraccionamientos {
+  grid-area: fraccionamientos;
+}
+
+.res-empresas {
+  grid-area: empresas;
+}
+
+.res-todos {
+  grid-area: todos;
+}
+
+.listado li:empty::marker {
+  display: none;
+}
 
 
 
