@@ -221,21 +221,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.section-text {
+/*si*/ .section-text {
   padding: 0.5rem 0 1rem 0;
   text-align: justify;
 }
 
-.section-text-center {
+/*si*/ .section-text-center {
   padding: 0.5rem 0 1rem 0;
   text-align: center;
 }
 
-.section-dark {
+/*si*/ .section-dark {
   background-color: var(--clr-mainblue);
   color: var(--clr-white);
   padding-block: 1rem;
 }
+
+
+
+/*si*/ table {
+  border-collapse: collapse;
+}
+
+/*si*/ table td, th {
+  padding: 5px;
+  border: 1px solid var(--clr-accent2);
+}
+
+/*si*/ table th {
+  padding: 5px;
+  text-align: center;
+  background-color: var(--clr-accent2);
+  color: var(--clr-white);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* acordeón (nosotros-->transparencia*/
@@ -301,13 +329,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.listado {
+/*si*/ .listado {
   display: list-item;
   list-style: disc;
   text-align: left;
 }
 
-.listado-secundario {
+/*si*/ .listado-secundario {
   display: list-item;
   list-style: circle;
   text-align: left;
@@ -316,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-a.button {
+/*si*/ a.button {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -324,7 +352,7 @@ a.button {
   background-color: var(--clr-accent2);
 }
 
-a.button2 {
+/*si*/ a.button2 {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -332,7 +360,7 @@ a.button2 {
   background-color: var(--clr-accent1);
 }
 
-a.button3 {
+/*si*/ a.button3 {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -372,7 +400,7 @@ a.button3 {
   align-items: center;
 }
 
-.foto {
+/*si*/ .foto {
   object-fit: cover;
   overflow: hidden;
   padding: 0.5rem;
@@ -467,7 +495,7 @@ a.button3 {
 
 /* wrapper es para mantener el footer abajo */
 
-.wrapper {
+/*si*/ .wrapper {
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -475,7 +503,7 @@ a.button3 {
 
 /* footer */
 
-.footer-inner {
+/*si*/ .footer-inner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
@@ -488,27 +516,27 @@ a.button3 {
   padding-block: 1rem;
 }
 
-.footer-social {
+/*si*/ .footer-social {
   grid-area: social;
 }
 
-.footer-social a {
+/*si*/ .footer-social a {
   font-size: 2rem;
   padding: 0.35rem;
 }
 
-.footer-logo {
+/*si*/ .footer-logo {
   grid-area: logo;
 }
 
-.footer-logo .logo {
+/*si*/ .footer-logo .logo {
   width: 40%;
 }
 
-.footer-donar {
+/*si*/ .footer-donar {
   grid-area: donar;
 }
 
-.footer-cierre {
+/*si*/ .footer-cierre {
   grid-area: cierre;
 }
