@@ -344,15 +344,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*si*/ a.button {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  color: var(--clr-white);
-  background-color: var(--clr-accent2);
-}
 
-/*si*/ a.button2 {
+/*si*/ a.button {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -360,12 +353,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--clr-accent1);
 }
 
-/*si*/ a.button3 {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  color: var(--clr-white);
-  background-color: var(--clr-aux3);
+/*si*/ p.link {
+  padding: 1rem;
+  color: var(--clr-accent1);
 }
 
 #intro {
@@ -375,23 +365,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .logo {
-  width:40%;
+  width:55%;
   padding: 0.5rem;
 }
 
-#pruebalogos .logo {
-  width:50%;
-  padding: 0.5rem;
-}
-
-#pruebalogosjuntos .logo {
-  display:flex-row;
-  width:20%;
-}
-
-#pruebalogosjuntos .logo2 {
-  width:30%;
-}
 
 
 #intro-mision {
