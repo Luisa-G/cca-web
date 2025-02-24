@@ -195,23 +195,48 @@ h1, h2, h3, h4, h5, h6 {
   padding-block: 1rem;
 }
 
-
+/* formato tablas */
 
 /*si*/ table {
   border-collapse: collapse;
 }
 
-/*si*/ table td, th {
-  padding: 5px;
-  border: 1px solid var(--clr-accent2);
+/*si*/ table caption {
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 /*si*/ table th {
   padding: 5px;
   text-align: center;
+  color: var(--clr-accent2);
+  border: 1px solid var(--clr-accent2);
+  font-size: 0.9rem;
+}
+
+/*si*/ thead th {
+  padding: 5px;
+  text-align: center;
+  background-color: var(--clr-accent2);
+  color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+  font-size: 0.9rem;
+}
+
+/*si*/ table td {
+  padding: 5px;
+  border: 1px solid var(--clr-accent2);
+  font-size: 0.9rem;
+}
+
+/*si*/ tfoot {
+  text-align: center;
+  font-weight: bold;
   background-color: var(--clr-accent2);
   color: var(--clr-white);
 }
+
+
 
 
 
@@ -288,13 +313,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*si*/ .listado {
-  display: list-item;
   list-style: disc;
   text-align: left;
 }
 
 /*si*/ .listado-secundario {
-  display: list-item;
   list-style: circle;
   text-align: left;
 }
