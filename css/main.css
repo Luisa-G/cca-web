@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* header */
 
-.main-header {
+/*si*/ .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,114 +71,70 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid var(--clr-maingreen);
 }
 
-.main-header .logo {
+/*si*/ .main-header .logo {
   max-width: 15rem;
 }
 
-.nav-list {
+/*nav bar*/
+
+/*si*/ .nav-list {
   margin: 0;
   display: flex;
   gap: 1rem;
 }
 
-.nav-link, .dropdown .nav-link {
+/*si*/ .nav-link, .dropdown .nav-link {
   position: relative;
   width: max-content;
-  padding: 5px;
+  padding: 2px;
 }
 
-.nav-link::after, .dropdown .nav-link::after {
-  content: "";
-  position: absolute;
-  background-color: var(--clr-maingreen);
-  height: 0;
-  width: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.nav-link:hover, .dropdown .nav-link:hover {
-  color: var(--clr-white);
+/*si*/ .nav-link:hover, .dropdown:hover .dropbtn {
+  color: var(--clr-accent2);
   font-weight: bold;
 }
 
-.nav-link:hover::after, .dropdown .nav-link:hover::after {
-  height: 100%;
-  width: 100%;
-  border-radius: 15%;
-}
-
-.dropdown:hover>.dropdown-menu {
-  display: block;
-  font-family: var(--ff-text);
-}
-
-.dropdown>.dropdown-toggle:active {
-
-  /* Without this, clicking will make it sticky */
-  pointer-events: none;
-} 
-
-.dropdown-toggle:after {
-  margin: 0;
-  border: 0;
-}
-
-.dropdown-text {
-  color: var(--clr-maingreen);
-}
-
-.seleccion {
+/*si*/ .seleccion {
+  color: var(--clr-accent2);
   font-weight: bold;
 }
 
-
-/* nuevo dropdown que hacemos */
-
-.dropbtn {
+/*si*/ .dropbtn {
   background-color: var(--clr-white);
-  color: var(--clr-maingreen);
-  /* width: 130px; */
-  /* padding: 10px; */
-  margin: 2px;
   border: none;
   cursor: pointer;
-  border-radius: 10px;
 }
 
-.dropdown {
+/*si*/ .dropdown {
   float: left;
 }
 
-.dropdown-content {
+/*si*/ .dropdown-content {
   border-radius: 10px;
   display: none;
   position: absolute;
-  background-color: #21205F;
+  background-color: var(--clr-white);
   min-width: 150px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px var(--clr-maingrey);
   z-index: 1;
 }
 
-.dropdown-content a {
+/*si*/ .dropdown-content a {
   border-radius: 10px;
-  color: white;
-  padding: 12px 16px;
+  color: var(--clr-maingreen);
+  padding: 6px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #66BD29}
+/*si*/ .dropdown-content a:hover {
+  color: var(--clr-mainblue);
+  font-weight: bold;
+}
 
-.dropdown:hover .dropdown-content {
+/*si*/ .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.dropdown:hover .dropbtn {
-  background-color: #66BD29;
-}
-
 
 
 
