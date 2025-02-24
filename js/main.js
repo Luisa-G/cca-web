@@ -1,5 +1,4 @@
 
-
 //para el acordeón
 var acc = document.getElementsByClassName("accordion");
 
