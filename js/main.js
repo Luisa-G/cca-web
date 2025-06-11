@@ -17,6 +17,9 @@ for (var i = 0; i < acc.length; i++) {
 }
 
 
+
+
+
 //para testimonios
 var slideIndex = 1;
 showSlides(slideIndex);
