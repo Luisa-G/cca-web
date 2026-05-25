@@ -6,6 +6,7 @@ import { HowWeHelp } from '@/components/HowWeHelp';
 import { Gallery } from '@/components/Gallery';
 import { Testimonials } from '@/components/Testimonials';
 import { EmotionalCTA } from '@/components/EmotionalCTA';
+import { HomeCarousel } from "@/components/HomeCarousel"
 
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <main>
         <Hero />
+        <section className="py-12 px-4 max-w-5xl mx-auto">
+          <HomeCarousel />
+        </section>
         <ImpactMetrics />
         <Programs />
         <Storytelling />
