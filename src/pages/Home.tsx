@@ -14,9 +14,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <main>
         <Hero />
-        <section className="py-12 px-4 max-w-5xl mx-auto">
-          <HomeCarousel />
-        </section>
+        <HomeCarousel />
         <ImpactMetrics />
         <Programs />
         <Storytelling />

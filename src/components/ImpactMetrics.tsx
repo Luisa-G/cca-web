@@ -40,7 +40,7 @@ export function ImpactMetrics() {
 
   return (
     <section id="our-impact" className="py-24 bg-card">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
           {metrics.map((metric, idx) => (
             <motion.div 
