@@ -75,7 +75,7 @@
   --foreground: 0 0% 10%;
   --border: 211 20% 88%;
   --input: 211 20% 88%;
-  --ring: 211 55% 52%;
+  --ring: 214 56.6% 52.2%;
 
   /* Cards */
   --card: 0 0% 100%;
@@ -83,43 +83,43 @@
   --card-border: 211 20% 88%;
 
   /* Popover */
-  --popover: 0 0% 100%;
+  --popover: 178 100% 34.3%;
   --popover-foreground: 0 0% 10%;
   --popover-border: 211 20% 88%;
 
   /* Azul principal — RGB 64, 124, 202 */
-  --primary: 211 55% 52%;
+  --primary: 214 56.6% 52.2%;
   --primary-foreground: 0 0% 100%;
 
   /* Verde principal — RGB 0, 157, 78 */
-  --secondary: 147 100% 31%;
+  --secondary: 150 100% 30.8%;
   --secondary-foreground: 0 0% 100%;
 
   /* Muted — gris azulado suave */
   --muted: 211 30% 95%;
-  --muted-foreground: 0 0% 44%;
+  --muted-foreground: 120 0.4% 44.5%;
 
   /* Accent — azul claro RGB 197, 217, 241 */
   --accent: 211 60% 93%;
-  --accent-foreground: 211 55% 30%;
+  --accent-foreground: 334 83% 51.6%;
 
   /* Azul muy suave — para fondos de sección */
   --surface: 211 60% 96%;
   --surface-foreground: 0 0% 10%;
 
   /* Destructive */
-  --destructive: 0 84% 60%;
+  --destructive: 35 100% 54.3%;
   --destructive-foreground: 0 0% 100%;
 
   /* Sidebar */
-  --sidebar: 211 30% 97%;
+  --sidebar: 147 47.2% 61.4%;
   --sidebar-foreground: 0 0% 10%;
   --sidebar-border: 211 20% 88%;
-  --sidebar-primary: 211 55% 52%;
+  --sidebar-primary: 214 56.6% 52.2%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 211 60% 93%;
   --sidebar-accent-foreground: 0 0% 10%;
-  --sidebar-ring: 211 55% 52%;
+  --sidebar-ring: 214 56.6% 52.2%;
 }
 
 @layer base {
@@ -134,4 +134,11 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif tracking-tight;
   }
+}
+
+/* Fuerza que los TabsContent inactivos sigan ocupando espacio */
+[data-slot="tabs-content"][data-state="inactive"] {
+  display: block !important;
+  visibility: hidden;
+  pointer-events: none;
 }

@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
     label: "¿Quiénes somos?",
     href: "/quienes-somos",
     children: [
-      { label: "Misión y visión", href: "/quienes-somos#mision" },
+      { label: "Misión, visión, valores y objetivos", href: "/quienes-somos#mision" },
       { label: "Principios", href: "/quienes-somos#principios" },
       { label: "Equipo de trabajo", href: "/quienes-somos#equipo" },
       { label: "Historia", href: "/quienes-somos#historia" },
@@ -92,12 +92,12 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-md font-medium hover:text-green-700 transition-colors">
+          <Link href="/" className="text-gray-700 text-md font-medium hover:text-secondary transition-colors">
             Inicio
           </Link>
           {navLinks.map((link) => (
             <div key={link.href} className="relative group">
-              <Link href={link.href} className="text-md font-medium hover:text-green-700 transition-colors">
+              <Link href={link.href} className="text-gray-700 text-md font-medium hover:text-secondary transition-colors">
                 {link.label}
               </Link>
               {link.children && (
@@ -106,7 +106,7 @@ export default function Navbar() {
                     <div key={child.href} className="relative group/sub">
                       <a
                         href={child.href}
-                        className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700"
+                        className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-secondary/5 hover:text-secondary"
                       >
                         {child.label}
                         {child.children && <span className="ml-2 text-xs">▶</span>}
@@ -117,7 +117,7 @@ export default function Navbar() {
                             <a
                               key={grandchild.href}
                               href={grandchild.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-secondary/5 hover:text-secondary"
                             >
                               {grandchild.label}
                             </a>
@@ -132,7 +132,7 @@ export default function Navbar() {
           ))}
           <a
             href="mailto:culturambiental.mx@gmail.com"
-            className="bg-green-700 text-white text-md px-6 py-3 rounded-full hover:bg-green-800 transition-colors"
+            className="bg-secondary text-white text-md px-6 py-3 rounded-full hover:bg-secondary/20 hover:text-secondary transition-colors"
           >
             Donar
           </a>

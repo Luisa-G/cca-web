@@ -30,7 +30,7 @@ function Counter({ value, direction = "up" }: { value: number, direction?: "up" 
   return <motion.span ref={ref}>{display}</motion.span>;
 }
 
-export function ImpactMetrics() {
+export function Resultados() {
   const metrics = [
     { label: "Materiales reciclados", value: 279000000, suffix: "+" },
     { label: "Fraccionamientos y escuelas", value: 29, suffix: "" },
@@ -39,7 +39,7 @@ export function ImpactMetrics() {
   ];
 
   return (
-    <section id="impacto" className="py-24 bg-card">
+    <section id="resultados" className="py-24 bg-card">
       <div className="container max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
           {metrics.map((metric, idx) => (

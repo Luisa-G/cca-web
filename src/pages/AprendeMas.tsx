@@ -1,8 +1,10 @@
 export default function AprendeMas() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold text-green-800">Aprende Más</h1>
-      <p className="mt-4 text-gray-600">Contenido próximamente.</p>
+    <div className="min-h-screen pt-8 bg-muted/30">
+      <main>
+        <h1 className="text-4xl text-secondary-foreground text-center bg-secondary py-4">Aprende más</h1>
+      
+      </main>
     </div>
   );
 }

@@ -15,37 +15,29 @@ const items = [
   },
 ];
 
-export function Principles() {
+export function Principios() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] rounded-2xl overflow-hidden border border-border">
+    <section id="principios" className="pt-26 bg-secondary">
+      <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-8">
+        <h2 className="text-3xl md:text-4xl font-serif text-secondary-foreground mb-6">Principios</h2>
+        <div className="grid grid-cols-1 md:grid-cols-[fr_1fr] rounded-2xl overflow-hidden border border-border bg-card">
+          <div>
+            {items.map((item) => (
+              <div
+                key={item.title}
+                className="grid grid-cols-[140px_1fr] gap-4 items-start px-8 py-6"
+              >
+                <h3 className="text-xl text-primary underline underline-offset-6">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-md leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
 
-        {/* Imagen izquierda */}
-        <div className="relative min-h-[320px]">
-          <img
-            src={misionImg}
-            alt="Equipo de CCA Chihuahua"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
         </div>
-
-        {/* Contenido derecho */}
-        <div className="divide-y divide-border">
-          {items.map((item) => (
-            <div
-              key={item.title}
-              className="grid grid-cols-[140px_1fr] gap-4 items-start px-8 py-6"
-            >
-              <h3 className="text-secondary text-lg pt-0.5">
-                {item.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-
       </div>
     </section>
   );

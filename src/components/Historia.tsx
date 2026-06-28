@@ -42,9 +42,9 @@ const steps = [
   }
 ];
 
-export function History() {
+export function Historia() {
   return (
-    <section className="py-24 bg-surface text-surface-foreground">
+    <section id="historia" className="py-24 bg-surface">
       <div className="container max-w-7xl mx-auto px-6 md:px-12">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-20"
@@ -53,7 +53,7 @@ export function History() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-surface-foreground">Nuestra historia</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-primary">Nuestra historia</h2>
           <p className="text-xl text-surface-foreground/70 font-light">
             Actuamos con el compromiso de vivir en armonía con la naturaleza y cuidar el planeta con responsabilidad.
           </p>
