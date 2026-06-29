@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { useState } from "react";
 import logoNavbar from '@/assets/images/logo-hor-2t.png';
 
@@ -67,6 +67,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubDropdown, setOpenSubDropdown] = useState<string | null>(null);
+  const [location] = useLocation();
 
   const handleDropdownToggle = (href: string) => {
     if (openDropdown === href) {
@@ -100,7 +101,14 @@ export default function Navbar() {
           </Link>
           {navLinks.map((link) => (
             <div key={link.href} className="relative group">
-              <Link href={link.href} className="text-gray-700 text-md font-medium hover:text-secondary transition-colors">
+              <Link
+                href={link.href}
+                className={`text-md font-medium transition-colors ${
+                  location === link.href || location.startsWith(link.href + "/")
+                    ? "text-secondary"
+                    : "text-gray-700 hover:text-secondary"
+                }`}
+              >
                 {link.label}
               </Link>
               {link.children && (
@@ -162,7 +170,11 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <div key={link.href}>
               <button
-                className="w-full text-left text-sm font-medium py-1 flex justify-between"
+                className={`w-full text-left text-sm font-medium py-1 flex justify-between transition-colors ${
+                  location === link.href || location.startsWith(link.href + "/")
+                    ? "text-secondary"
+                    : "text-gray-700"
+                }`}
                 onClick={() => handleDropdownToggle(link.href)}
               >
                 {link.label}
