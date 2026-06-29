@@ -1,6 +1,23 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { useState } from "react";
 import logoNavbar from '@/assets/images/logo-hor-2t.png';
+
+// Helper para navegar a una ruta con hash
+function useNavigateToHash() {
+  const [, navigate] = useLocation();
+
+  return (href: string) => {
+    const [path, hash] = href.split("#");
+    navigate(path);
+    if (hash) {
+      // Pequeño delay para que React renderice la página antes de hacer scroll
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  };
+}
 
 type NavLink = {
   label: string;
@@ -67,6 +84,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubDropdown, setOpenSubDropdown] = useState<string | null>(null);
+  const navigateTo = useNavigateToHash();
 
 
   const handleDropdownToggle = (href: string) => {
@@ -108,23 +126,23 @@ export default function Navbar() {
                 <div className="absolute top-full left-0 mt-1 w-56 bg-white shadow-lg rounded-md py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
                   {link.children.map((child) => (
                     <div key={child.href} className="relative group/sub">
-                      <a
-                        href={child.href}
-                        className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-secondary/5 hover:text-secondary"
+                      <button
+                        onClick={() => navigateTo(child.href)}
+                        className="flex items-center justify-between w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-secondary/5 hover:text-secondary"
                       >
                         {child.label}
                         {child.children && <span className="ml-2 text-xs">▶</span>}
-                      </a>
+                      </button>
                       {child.children && (
                         <div className="absolute left-full top-0 w-64 bg-white shadow-lg rounded-md py-1 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all z-50">
                           {child.children.map((grandchild) => (
-                            <a
+                            <button
                               key={grandchild.href}
-                              href={grandchild.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-secondary/5 hover:text-secondary"
+                              onClick={() => navigateTo(grandchild.href)}
+                              className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-secondary/5 hover:text-secondary"
                             >
                               {grandchild.label}
-                            </a>
+                            </button>
                           ))}
                         </div>
                       )}
@@ -187,26 +205,22 @@ export default function Navbar() {
                           {openSubDropdown === child.href && (
                             <div className="pl-4 space-y-1">
                               {child.children.map((grandchild) => (
-                                <a
+                                <button
                                   key={grandchild.href}
-                                  href={grandchild.href}
-                                  className="block text-sm text-gray-500 py-1"
-                                  onClick={() => setMenuOpen(false)}
+                                  onClick={() => { navigateTo(grandchild.href); setMenuOpen(false); }}
+                                  className="block w-full text-left text-sm text-gray-500 py-1"
                                 >
                                   {grandchild.label}
-                                </a>
+                                </button>
                               ))}
                             </div>
                           )}
                         </>
                       ) : (
-                        <a
-                          href={child.href}
-                          className="block text-sm text-gray-600 py-1"
-                          onClick={() => setMenuOpen(false)}
-                        >
-                          {child.label}
-                        </a>
+                        <button
+                          onClick={() => { navigateTo(child.href); setMenuOpen(false); }}
+                          className="block w-full text-left text-sm text-gray-600 py-1"
+                        ></button>
                       )}
                     </div>
                   ))}
