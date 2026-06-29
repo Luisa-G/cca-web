@@ -57,7 +57,7 @@ const navLinks: NavLink[] = [
       { label: "Aliados", href: "/aprende-mas#aliados" },
       { label: "Nuestras investigaciones", href: "/aprende-mas#inv-propias" },
       { label: "Material adicional", href: "/aprende-mas#adicional" },
-      { label: "Investigaciones externas", href: "/aprende-mas#inv-otros" },
+      { label: "Investigaciones externas", href: "/aprende-mas#inv-externas" },
       { label: "Casos de éxito", href: "/aprende-mas#casos-exito" },
     ],
   },
