@@ -26,7 +26,7 @@ const navLinks: NavLink[] = [
     label: "¿Qué hacemos?",
     href: "/que-hacemos",
     children: [
-      { label: "Metodología 6 Rs", href: "/que-hacemos#metodología" },
+      { label: "Metodología 6 Rs", href: "/que-hacemos#metodologia" },
       {
         label: "Ejes",
         href: "/que-hacemos#ejes",
@@ -43,19 +43,22 @@ const navLinks: NavLink[] = [
     label: "Toma Acción",
     href: "/toma-accion",
     children: [
-      { label: "Centros de acopio", href: "/aprende-mas#acopio" },
-      { label: "Unirse a programas", href: "/aprende-mas#programas" },
-      { label: "Donar", href: "/aprende-mas#donar" },
-      { label: "Cuida el medio ambiente", href: "/aprende-mas#cuidados" },
-      { label: "Cursos", href: "/aprende-mas#cursos" },
+      { label: "Centros de acopio", href: "/toma-accion#acopio" },
+      { label: "Unirse a programas", href: "/toma-accion#programas" },
+      { label: "Donar", href: "/toma-accion#donar" },
+      { label: "Cuida el medio ambiente", href: "/toma-accion#medio-ambiente" },
+      { label: "Cursos", href: "/toma-accion#cursos" },
     ],
   },
   {
     label: "Aprende Más",
     href: "/aprende-mas",
     children: [
-      { label: "Aliados", href: "/aprende-mas#red" },
-      { label: "Nuestras investigaciones", href: "/aprende-mas#directorios" },
+      { label: "Aliados", href: "/aprende-mas#aliados" },
+      { label: "Nuestras investigaciones", href: "/aprende-mas#inv-propias" },
+      { label: "Material adicional", href: "/aprende-mas#adicional" },
+      { label: "Investigaciones externas", href: "/aprende-mas#inv-otros" },
+      { label: "Casos de éxito", href: "/aprende-mas#casos-exito" },
     ],
   },
 ];
