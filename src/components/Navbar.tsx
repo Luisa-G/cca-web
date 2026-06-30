@@ -5,6 +5,7 @@ import logoNavbar from '@/assets/images/logo-hor-2t.png';
 // Helper para navegar a una ruta con hash
 function useNavigateToHash() {
   const [, navigate] = useLocation();
+  
 
   return (href: string) => {
     const [path, hash] = href.split("#");
@@ -51,7 +52,7 @@ const navLinks: NavLink[] = [
           { label: "Eje 1: Sensibilización y capacitación", href: "/que-hacemos#sensibilizacion" },
           { label: "Eje 2: Reciclables Domésticos", href: "/que-hacemos#reciclables" },
           { label: "Eje 3: Comparte", href: "/que-hacemos#comparte" },
-          { label: "Eje 4: Política", href: "/que-hacemos#politica" },
+          { label: "Eje 4: Incidencia en política pública", href: "/que-hacemos#politica" },
         ],
       },
     ],
@@ -85,7 +86,7 @@ export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubDropdown, setOpenSubDropdown] = useState<string | null>(null);
   const navigateTo = useNavigateToHash();
-
+  const [location] = useLocation();
 
   const handleDropdownToggle = (href: string) => {
     if (openDropdown === href) {
@@ -114,12 +115,26 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-gray-700 text-md font-medium hover:text-secondary transition-colors">
+          <Link
+            href="/"
+            className={`text-md font-medium transition-colors ${
+              location === "/"
+                ? "text-secondary"
+                : "text-gray-700 hover:text-secondary"
+            }`}
+          >
             Inicio
           </Link>
           {navLinks.map((link) => (
             <div key={link.href} className="relative group">
-              <Link href={link.href} className="text-gray-700 text-md font-medium hover:text-secondary transition-colors">
+              <Link
+                href={link.href}
+                className={`text-md font-medium transition-colors ${
+                  location === link.href || location.startsWith(link.href + "/")
+                    ? "text-secondary"
+                    : "text-gray-700 hover:text-secondary"
+                }`}
+              >
                 {link.label}
               </Link>
               {link.children && (
@@ -175,20 +190,40 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t px-4 py-3 space-y-2">
-          <Link href="/" className="block text-sm font-medium py-1" onClick={() => setMenuOpen(false)}>
+          <Link
+            href="/"
+            className={`block text-sm font-medium py-1 transition-colors ${
+              location === "/" ? "text-secondary" : "text-gray-700"
+            }`}
+            onClick={() => setMenuOpen(false)}
+          >
             Inicio
           </Link>
           {navLinks.map((link) => (
             <div key={link.href}>
-              <button
-                className="w-full text-left text-sm font-medium py-1 flex justify-between"
-                onClick={() => handleDropdownToggle(link.href)}
+              <div
+                className={`w-full flex items-center justify-between text-sm font-medium py-1 transition-colors ${
+                  location === link.href || location.startsWith(link.href + "/")
+                    ? "text-secondary"
+                    : "text-gray-700"
+                }`}
               >
-                {link.label}
+                <button
+                  onClick={() => { navigateTo(link.href); setMenuOpen(false); }}
+                  className="text-left flex-1"
+                >
+                  {link.label}
+                </button>
                 {link.children && (
-                  <span>{openDropdown === link.href ? "▲" : "▼"}</span>
+                  <button
+                    onClick={() => handleDropdownToggle(link.href)}
+                    className="px-2 py-1"
+                    aria-label={`Mostrar submenú de ${link.label}`}
+                  >
+                    {openDropdown === link.href ? "▲" : "▼"}
+                  </button>
                 )}
-              </button>
+              </div>
               {openDropdown === link.href && link.children && (
                 <div className="pl-4 space-y-1">
                   {link.children.map((child) => (
@@ -220,7 +255,9 @@ export default function Navbar() {
                         <button
                           onClick={() => { navigateTo(child.href); setMenuOpen(false); }}
                           className="block w-full text-left text-sm text-gray-600 py-1"
-                        ></button>
+                        >
+                          {child.label}
+                        </button>
                       )}
                     </div>
                   ))}

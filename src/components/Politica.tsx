@@ -64,7 +64,7 @@ export function Politica() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-secondary mb-6">Eje 4. Política</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-secondary mb-6">Eje 4. Incidencia en política pública</h2>
             <p className="text-lg text-muted-foreground">Agregar contenido</p>
           </motion.div>
         </div>

@@ -30,7 +30,7 @@ export function Principios() {
                 <h3 className="text-xl text-primary underline underline-offset-6">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground text-md leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   {item.text}
                 </p>
               </div>

@@ -1,56 +1,4 @@
 import { motion } from 'framer-motion';
-import team1 from '@/assets/images/team-1.jpg';
-import team2 from '@/assets/images/team-2.jpg';
-import team3 from '@/assets/images/team-3.jpg';
-import team4 from '@/assets/images/team-4.jpg';
-import team5 from '@/assets/images/team-5.jpg';
-import team6 from '@/assets/images/team-6.jpg';
-import team7 from '@/assets/images/team-7.jpg';
-
-const people = [
-  {
-    title: "Ana de la Rosa",
-    tag: "Arquitecta",
-    description: "Experiencia con más de 30 años en estrategias del cuidado del medio ambiente. “Creo que los ciudadanos podemos hacer la diferencia en el cuidado del medio ambiente”.",
-    image: team1,
-  },
-  {
-    title: "Marcia Jaramillo",
-    tag: "Maestría en valores y desarrollo humano (IAPE)",
-    description: "“Creo firmemente en que el Ser Humano puede cambiar su forma de actuar si se hace consciente del efecto y trascendencia  de sus acciones actuales y por ende puede  hacerse  responsable de ellas para cambiar el futuro de nuestro planeta en forma individual; y ser parte de un movimiento colectivo y esperanzador”.",
-    image: team2,
-  },
-  {
-    title: "Teresa Pérez",
-    tag: "Arquitecta",
-    description: "“Durante más de 40 años he trabajado en educación organizando proyectos que tienen que ver con la responsabilidad que tenemos como individuos en el cuidado del medio ambiente y organizando el centro de acopio de una escuela”.",
-    image: team3,
-  },
-  {
-    title: "Lourdes Pico",
-    tag: "Maestría en Ciencias Químicas y Administración de Empresas",
-    description: "Más de 30 años participando de acciones para el cuidado al Medio Ambiente. “Me motiva el generar condiciones para que la comunidad participe con actividades sencillas pero contundentes para aminorar el cambio climático y así poder vivir en una ciudad sustentable”.",
-    image: team4,
-  },
-  {
-    title: "Daniela Martínez",
-    tag: "Lic. en Administración Financiera",
-    description: "“Considero la consciencia y responsabilidad individual muy importante en todos los aspectos; es vital para la conservación de la vida, el cuidar de los recursos que tenemos”.",
-    image: team5,
-  },
-  {
-    title: "Luis Delgado",
-    tag: "Técnico en Animal Sc",
-    description: "“Cada vez es más importante crear conciencia en la gente sobre el cuidado del planeta”.",
-    image: team6,
-  },
-  {
-    title: "Hector Ortíz",
-    tag: "",
-    description: "“Es importante cuidar el medio ambiente”.",
-    image: team7,
-  }
-];
 
 export function Transparencia() {
   return (
@@ -68,6 +16,51 @@ export function Transparencia() {
             <p className="text-lg text-muted-foreground">Agregar contenido</p>
           </motion.div>
         </div>
+                <div
+          style={{
+            position: 'relative',
+            width: '70%',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            height: '60vh',   // o '60vh', ajusta a tu gusto
+            paddingTop: 0,
+            paddingBottom: 0,
+            overflow: 'hidden',
+            borderRadius: '12px',
+            boxShadow: '0 2px 8px 0 rgba(63,69,81,0.16)',
+            marginTop: '1.6em',
+            marginBottom: '1.2em',
+          }}
+        >
+          <iframe
+            loading="lazy"
+            style={{
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+              top: 0,
+              left: 0,
+              border: 'none',
+              padding: 0,
+              margin: 0,
+            }}
+            src="https://www.canva.com/design/DAHHilBvTHA/d0fEr7Ez1yZXxYObDRd_3g/view?embed"
+            allow="fullscreen"
+          />
+        </div>
+
+        {/* Link con clases Tailwind consistentes con el resto del componente */}
+        <a
+          href="https://www.canva.com/design/DAHHilBvTHA/d0fEr7Ez1yZXxYObDRd_3g/view?utm_content=DAHHilBvTHA&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
+        >
+          Informe de Cultura Ambiental CCA
+        </a>
+
+        
+
       </div>
     </section>
   );
