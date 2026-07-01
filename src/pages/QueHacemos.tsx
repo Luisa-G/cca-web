@@ -1,9 +1,5 @@
 import { Metodologia } from '@/components/Metodologia';
 import { Ejes } from '@/components/Ejes';
-import { Sensibilizacion } from '@/components/Sensibilizacion';
-import { Reciclables } from '@/components/Reciclables';
-import { Comparte } from '@/components/Comparte';
-import { Politica } from '@/components/Politica';
 
 export default function QueHacemos() {
   return (
@@ -12,10 +8,6 @@ export default function QueHacemos() {
         <h1 className="text-3xl md:text-4xl text-secondary-foreground text-center bg-secondary py-4">¿Qué hacemos?</h1>
         <Metodologia />
         <Ejes />
-        <Sensibilizacion />
-        <Reciclables />
-        <Comparte />
-        <Politica />
       </main>
     </div>
   );

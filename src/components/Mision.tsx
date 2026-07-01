@@ -39,7 +39,7 @@ export function Mision() {
   return (
     <section id="mision" className="pt-26 pb-12 bg-card">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-8">
-        <h2 className="text-3xl md:text-3xl font-serif text-primary mb-6">Mensaje de las consejeras</h2>
+        <h2 className="text-2xl md:text-3xl font-serif text-primary mb-6">Mensaje de las consejeras</h2>
         <p className="text-lg text-muted-foreground pb-2"><b>La sostenibilidad se construye en el presente, actúa ahora</b></p>
         <p className="text-lg text-muted-foreground pb-2"><b>Cultura y Acción Ambiental en Chihuahua</b></p>
         <p className="italic text-lg text-muted-foreground pb-2">Juntos tenemos el poder de transformar nuestro entorno y heredar un Chihuahua sostenible a los ciudadanos</p>

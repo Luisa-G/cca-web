@@ -12,7 +12,6 @@ import { Mision2 } from '@/components/Mision2';
 export default function QuienesSomos() {
   return (
     <div className="min-h-screen pt-8 bg-muted/30">
-    {/* <div className="max-w-6xl mx-auto px-4 py-16"> */}
       <main>
         <h1 className="text-3xl md:text-4xl text-secondary-foreground text-center bg-secondary py-4">¿Quiénes somos?</h1>
         <Mision />

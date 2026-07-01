@@ -46,7 +46,7 @@ const navLinks: NavLink[] = [
     children: [
       { label: "Metodología 6 Rs", href: "/que-hacemos#metodologia" },
       {
-        label: "Ejes",
+        label: "Ejes de trabajo",
         href: "/que-hacemos#ejes",
         children: [
           { label: "Eje 1: Sensibilización y capacitación", href: "/que-hacemos#sensibilizacion" },
