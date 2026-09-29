@@ -8,6 +8,7 @@ import { Transparencia } from '@/components/Transparencia';
 
 //Falta terminar y reacomodar
 import { Mision2 } from '@/components/Mision2';
+import { CarouselVertical } from '@/components/rpueba';
 
 export default function QuienesSomos() {
   return (
@@ -22,6 +23,7 @@ export default function QuienesSomos() {
         <Resultados />
         <Reconocimientos />
         <Transparencia />
+        <CarouselVertical />
       </main>
     </div>
   );
