@@ -87,11 +87,11 @@ export function Equipo() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-serif text-foreground mb-3">{p.title}</h3>
-                <span className="text-xs font-semibold uppercase tracking-wider text-foreground mb-3 block">
+                <h3 className="text-2xl font-serif text-muted-foreground mb-3">{p.title}</h3>
+                <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3 block">
                   {p.tag}
                 </span>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                <p className="text-foreground text-sm leading-relaxed mb-6">
                   {p.description}
                 </p>
               </div>
