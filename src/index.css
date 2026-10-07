@@ -100,7 +100,7 @@
   --muted-foreground: 211 56.5% 18%; /* azul marino*/
 
   /* Accent */
-  --accent: 0 0% 10.2%; /* negro */
+  --accent: 211 56.5% 18%; /* azul marino*/
   --accent-foreground: 334 83% 51.6%; /* rosa */
 
   /* Surface */
@@ -128,7 +128,7 @@
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground overflow-x-hidden;
+    @apply font-sans antialiased bg-background text-accent overflow-x-hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {

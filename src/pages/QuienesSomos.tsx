@@ -7,7 +7,7 @@ import { Reconocimientos } from '@/components/Reconocimientos';
 import { Transparencia } from '@/components/Transparencia';
 
 //Falta terminar y reacomodar
-import { Mision2 } from '@/components/Mision2';
+
 import { CarouselVertical } from '@/components/rpueba';
 
 export default function QuienesSomos() {
@@ -16,7 +16,6 @@ export default function QuienesSomos() {
       <main>
         <h1 className="text-3xl md:text-4xl text-secondary-foreground text-center bg-secondary pb-6 text-shadow-xs text-shadow-muted-foreground">¿Quiénes somos?</h1>
         <Mision />
-        <Mision2 />
         <Principios />
         <Equipo />
         <Historia />
