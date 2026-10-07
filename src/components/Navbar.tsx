@@ -175,16 +175,24 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden p-2"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Menú"
-        >
-          <div className="w-6 h-0.5 bg-surface-foreground mb-1" />
-          <div className="w-6 h-0.5 bg-surface-foreground mb-1" />
-          <div className="w-6 h-0.5 bg-surface-foreground" />
-        </button>
+        {/* Mobile: botón Donar + hamburguesa */}
+        <div className="flex items-center gap-3 md:hidden">
+          <a
+            href="mailto:culturambiental.mx@gmail.com"
+            className="bg-muted-foreground text-background text-sm px-4 py-2 rounded-full hover:bg-surface hover:text-surface-foreground transition-colors"
+          >
+            Donar
+          </a>
+          <button
+            className="p-2"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menú"
+          >
+            <div className="w-6 h-0.5 bg-surface-foreground mb-1" />
+            <div className="w-6 h-0.5 bg-surface-foreground mb-1" />
+            <div className="w-6 h-0.5 bg-surface-foreground" />
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
