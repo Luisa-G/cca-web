@@ -12,9 +12,9 @@ import { CarouselVertical } from '@/components/rpueba';
 
 export default function QuienesSomos() {
   return (
-    <div className="min-h-screen pt-8 bg-muted/30">
+    <div className="min-h-screen pt-8 bg-secondary">
       <main>
-        <h1 className="text-3xl md:text-4xl text-secondary-foreground text-center bg-secondary py-4">¿Quiénes somos?</h1>
+        <h1 className="text-3xl md:text-4xl text-secondary-foreground text-center bg-secondary pb-6 text-shadow-xs text-shadow-muted-foreground">¿Quiénes somos?</h1>
         <Mision />
         <Mision2 />
         <Principios />

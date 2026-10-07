@@ -4,7 +4,7 @@ import logoFooter from '@/assets/images/logo-hor-b.png';
 
 export default function Footer() {
   return (
-    <footer className="bg-border text-background mt-auto">
+    <footer className="bg-muted-foreground text-background mt-auto">
       <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] gap-8 items-center justify-items-center text-center">
         <div>
           <img

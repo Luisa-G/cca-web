@@ -73,17 +73,17 @@
   /* Fondos y texto */
   --background: 0 0% 100%; /* blanco */
   --foreground: 0 0% 10.2%; /* negro */
-  --border: 211 56.5% 18%; /* azul marino*/
-  --input: 211 20% 88%;
-  --ring: 214 56.6% 52.2%;
+  --border: 0 0% 27%; /* gris */
+  --input: 170 48.3% 72%; /* aqua azul */
+  --ring: 214 56.6% 52.2%; /* azul */
 
   /* Cards */
   --card: 0 0% 100%; /* blanco */
   --card-foreground: 0 0% 10.2%; /* negro */
-  --card-border: 211 20% 88%;
+  --card-border: 147 47.2% 61.4%; /* aqua verde */
 
   /* Popover */
-  --popover: 178 100% 34.3%;
+  --popover: 178 100% 34.3%; /* aquaa */
   --popover-foreground: 0 0% 10.2%; /* negro */
   --popover-border: 211 20% 88%;
 
@@ -101,18 +101,18 @@
 
   /* Accent */
   --accent: 0 0% 10.2%; /* negro */
-  --accent-foreground: 334 83% 51.6%;
+  --accent-foreground: 334 83% 51.6%; /* rosa */
 
   /* Surface */
   --surface: 213 46% 87.6%; /* azul transparente */
   --surface-foreground:  211 56.5% 18%; /* azul marino*/
 
   /* Destructive */
-  --destructive: 35 100% 54.3%;
+  --destructive: 35 100% 54.3%; /* naranja */
   --destructive-foreground: 0 0% 100%; /* blanco */
 
   /* Sidebar */
-  --sidebar: 147 47.2% 61.4%;
+  --sidebar: 120 0.4% 61.4%; /* gris bajito */
   --sidebar-foreground: 0 0% 10.2%; /* negro */
   --sidebar-border: 211 20% 88%;
   --sidebar-primary: 214 56.6% 52.2%; /* azul */

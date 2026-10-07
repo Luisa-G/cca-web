@@ -103,7 +103,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="w-full bg-white shadow-sm sticky top-0 z-50">
+    <header className="w-full bg-background shadow-sm sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/">
           <img
@@ -120,7 +120,7 @@ export default function Navbar() {
             className={`text-md font-medium transition-colors ${
               location === "/"
                 ? "bg-surface text-surface-foreground rounded-full px-1"
-                : "text-surface-foreground hover:bg-surface text-surface-foreground rounded-full px-1"
+                : "text-surface-foreground hover:bg-surface rounded-full px-1"
             }`}
           >
             Inicio
@@ -132,13 +132,13 @@ export default function Navbar() {
                 className={`text-md font-medium transition-colors ${
                   location === link.href || location.startsWith(link.href + "/")
                     ? "bg-surface text-surface-foreground rounded-full px-1"
-                    : "text-surface-foreground hover:bg-surface text-surface-foreground rounded-full px-1"
+                    : "text-surface-foreground hover:bg-surface rounded-full px-1"
                 }`}
               >
                 {link.label}
               </Link>
               {link.children && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-white shadow-lg rounded-md py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                <div className="absolute top-full left-0 mt-1 w-56 bg-background shadow-lg rounded-md py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
                   {link.children.map((child) => (
                     <div key={child.href} className="relative group/sub">
                       <button
@@ -149,7 +149,7 @@ export default function Navbar() {
                         {child.children && <span className="ml-2 text-xs">▶</span>}
                       </button>
                       {child.children && (
-                        <div className="absolute left-full top-0 w-64 bg-white shadow-lg rounded-md py-1 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all z-50">
+                        <div className="absolute left-full top-0 w-64 bg-background shadow-lg rounded-md py-1 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all z-50">
                           {child.children.map((grandchild) => (
                             <button
                               key={grandchild.href}
@@ -169,7 +169,7 @@ export default function Navbar() {
           ))}
           <a
             href="mailto:culturambiental.mx@gmail.com"
-            className="bg-border text-white text-md px-6 py-3 rounded-full hover:bg-surface hover:text-surface-foreground transition-colors"
+            className="bg-muted-foreground text-background text-md px-6 py-3 rounded-full hover:bg-surface hover:text-surface-foreground transition-colors"
           >
             Donar
           </a>
@@ -181,15 +181,15 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menú"
         >
-          <div className="w-6 h-0.5 bg-gray-700 mb-1" />
-          <div className="w-6 h-0.5 bg-gray-700 mb-1" />
-          <div className="w-6 h-0.5 bg-gray-700" />
+          <div className="w-6 h-0.5 bg-surface-foreground mb-1" />
+          <div className="w-6 h-0.5 bg-surface-foreground mb-1" />
+          <div className="w-6 h-0.5 bg-surface-foreground" />
         </button>
       </div>
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t px-4 py-3 space-y-2">
+        <div className="md:hidden bg-background border-t px-4 py-3 space-y-2">
           <Link
             href="/"
             className={`block text-sm font-medium py-1 transition-colors ${
@@ -204,7 +204,7 @@ export default function Navbar() {
               <div
                 className={`w-full flex items-center justify-between text-sm font-medium py-1 transition-colors ${
                   location === link.href || location.startsWith(link.href + "/")
-                    ? "bg-surface-foreground text-surface"
+                    ? "bg-surface text-surface-foreground"
                     : "text-surface-foreground"
                 }`}
               >
