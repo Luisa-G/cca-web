@@ -100,7 +100,7 @@ export function Mision() {
                 <TabsTrigger
                   key={tab.id}
                   value={tab.id}
-                  className="px-3 text-sm md:text-base data-[state=active]:bg-muted data-[state=active]:shadow-none"
+                  className="px-3 text-sm md:text-base data-[state=active]:bg-muted data-[state=active]:shadow-none font-bold"
                 >
                   {tab.name}
                 </TabsTrigger>

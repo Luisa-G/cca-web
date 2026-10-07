@@ -23,7 +23,7 @@ export function CarouselVertical() {
       }}
       orientation="vertical"
     >
-      <CarouselContent className="-mt-1 h-[250px]">
+      <CarouselContent className="-mt-1 h-62.5">
         {images.map((image) => (
           <CarouselItem className="pt-1 md:basis-1/2" key={image}>
             <div className="aspect-video p-1">

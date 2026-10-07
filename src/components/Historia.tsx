@@ -44,7 +44,7 @@ const steps = [
 
 export function Historia() {
   return (
-    <section id="historia" className="pt-26 pb-12 bg-surface">
+    <section id="historia" className="pt-26 pb-12 bg-muted">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-8">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-20"
