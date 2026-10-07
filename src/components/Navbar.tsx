@@ -119,8 +119,8 @@ export default function Navbar() {
             href="/"
             className={`text-md font-medium transition-colors ${
               location === "/"
-                ? "text-secondary"
-                : "text-gray-700 hover:text-secondary"
+                ? "bg-surface text-surface-foreground rounded-full px-1"
+                : "text-surface-foreground hover:bg-surface text-surface-foreground rounded-full px-1"
             }`}
           >
             Inicio
@@ -131,8 +131,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-md font-medium transition-colors ${
                   location === link.href || location.startsWith(link.href + "/")
-                    ? "text-secondary"
-                    : "text-gray-700 hover:text-secondary"
+                    ? "bg-surface text-surface-foreground rounded-full px-1"
+                    : "text-surface-foreground hover:bg-surface text-surface-foreground rounded-full px-1"
                 }`}
               >
                 {link.label}
@@ -143,7 +143,7 @@ export default function Navbar() {
                     <div key={child.href} className="relative group/sub">
                       <button
                         onClick={() => navigateTo(child.href)}
-                        className="flex items-center justify-between w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-secondary/5 hover:text-secondary"
+                        className="flex items-center justify-between w-full px-4 py-2 text-left text-sm text-surface-foreground hover:bg-surface hover:text-surface-foreground"
                       >
                         {child.label}
                         {child.children && <span className="ml-2 text-xs">▶</span>}
@@ -154,7 +154,7 @@ export default function Navbar() {
                             <button
                               key={grandchild.href}
                               onClick={() => navigateTo(grandchild.href)}
-                              className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-secondary/5 hover:text-secondary"
+                              className="block w-full text-left px-4 py-2 text-sm text-surface-foreground hover:bg-surface hover:text-surface-foreground"
                             >
                               {grandchild.label}
                             </button>
@@ -169,7 +169,7 @@ export default function Navbar() {
           ))}
           <a
             href="mailto:culturambiental.mx@gmail.com"
-            className="bg-secondary text-white text-md px-6 py-3 rounded-full hover:bg-secondary/20 hover:text-secondary transition-colors"
+            className="bg-border text-white text-md px-6 py-3 rounded-full hover:bg-surface hover:text-surface-foreground transition-colors"
           >
             Donar
           </a>
@@ -193,7 +193,7 @@ export default function Navbar() {
           <Link
             href="/"
             className={`block text-sm font-medium py-1 transition-colors ${
-              location === "/" ? "text-secondary" : "text-gray-700"
+              location === "/" ? "bg-surface text-surface-foreground" : "text-surface-foreground"
             }`}
             onClick={() => setMenuOpen(false)}
           >
@@ -204,8 +204,8 @@ export default function Navbar() {
               <div
                 className={`w-full flex items-center justify-between text-sm font-medium py-1 transition-colors ${
                   location === link.href || location.startsWith(link.href + "/")
-                    ? "text-secondary"
-                    : "text-gray-700"
+                    ? "bg-surface-foreground text-surface"
+                    : "text-surface-foreground"
                 }`}
               >
                 <button
@@ -231,7 +231,7 @@ export default function Navbar() {
                       {child.children ? (
                         <>
                           <button
-                            className="w-full text-left text-sm text-gray-600 py-1 flex justify-between"
+                            className="w-full text-left text-sm text-surface-foreground py-1 flex justify-between"
                             onClick={() => handleSubDropdownToggle(child.href)}
                           >
                             {child.label}
@@ -243,7 +243,7 @@ export default function Navbar() {
                                 <button
                                   key={grandchild.href}
                                   onClick={() => { navigateTo(grandchild.href); setMenuOpen(false); }}
-                                  className="block w-full text-left text-sm text-gray-500 py-1"
+                                  className="block w-full text-left text-sm text-surface-foreground py-1"
                                 >
                                   {grandchild.label}
                                 </button>
@@ -254,7 +254,7 @@ export default function Navbar() {
                       ) : (
                         <button
                           onClick={() => { navigateTo(child.href); setMenuOpen(false); }}
-                          className="block w-full text-left text-sm text-gray-600 py-1"
+                          className="block w-full text-left text-sm text-surface-foreground py-1"
                         >
                           {child.label}
                         </button>

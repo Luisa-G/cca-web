@@ -14,7 +14,6 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <main>
         <Hero />
-
         <ImpactMetrics />
         <Programs />
         <Storytelling />

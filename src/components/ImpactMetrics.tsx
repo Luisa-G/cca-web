@@ -55,7 +55,7 @@ export function ImpactMetrics() {
                 <Counter value={metric.value} />
                 <span className="text-primary">{metric.suffix}</span>
               </div>
-              <div className="text-sm md:text-base text-muted-foreground font-medium uppercase tracking-wider">
+              <div className="text-sm md:text-base text-accent font-medium uppercase tracking-wider">
                 {metric.label}
               </div>
             </motion.div>

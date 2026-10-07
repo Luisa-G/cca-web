@@ -71,55 +71,55 @@
   --radius: 0.5rem;
 
   /* Fondos y texto */
-  --background: 0 0% 98%;
-  --foreground: 0 0% 10%;
-  --border: 211 20% 88%;
+  --background: 0 0% 100%; /* blanco */
+  --foreground: 0 0% 10.2%; /* negro */
+  --border: 211 56.5% 18%; /* azul marino*/
   --input: 211 20% 88%;
   --ring: 214 56.6% 52.2%;
 
   /* Cards */
-  --card: 0 0% 100%;
-  --card-foreground: 0 0% 10%;
+  --card: 0 0% 100%; /* blanco */
+  --card-foreground: 0 0% 10.2%; /* negro */
   --card-border: 211 20% 88%;
 
   /* Popover */
   --popover: 178 100% 34.3%;
-  --popover-foreground: 0 0% 10%;
+  --popover-foreground: 0 0% 10.2%; /* negro */
   --popover-border: 211 20% 88%;
 
-  /* Azul principal — RGB 64, 124, 202 */
-  --primary: 214 56.6% 52.2%;
-  --primary-foreground: 0 0% 100%;
+  /* Azul */
+  --primary: 214 56.6% 52.2%; /* azul */
+  --primary-foreground: 0 0% 100%; /* blanco */
 
-  /* Verde principal — RGB 0, 157, 78 */
-  --secondary: 150 100% 30.8%;
-  --secondary-foreground: 0 0% 100%;
+  /* Verde */
+  --secondary: 150 100% 30.8%; /* verde */
+  --secondary-foreground: 0 0% 100%; /* blanco */
 
-  /* Muted — gris azulado suave */
-  --muted: 211 30% 95%;
-  --muted-foreground: 120 0.4% 44.5%;
+  /* Muted  */
+  --muted: 157 37.2% 83.1%; /* verde transparente*/
+  --muted-foreground: 211 56.5% 18%; /* azul marino*/
 
-  /* Accent — azul claro RGB 197, 217, 241 */
-  --accent: 211 60% 93%;
+  /* Accent */
+  --accent: 0 0% 10.2%; /* negro */
   --accent-foreground: 334 83% 51.6%;
 
-  /* Azul muy suave — para fondos de sección */
-  --surface: 211 60% 96%;
-  --surface-foreground: 0 0% 10%;
+  /* Surface */
+  --surface: 213 46% 87.6%; /* azul transparente */
+  --surface-foreground:  211 56.5% 18%; /* azul marino*/
 
   /* Destructive */
   --destructive: 35 100% 54.3%;
-  --destructive-foreground: 0 0% 100%;
+  --destructive-foreground: 0 0% 100%; /* blanco */
 
   /* Sidebar */
   --sidebar: 147 47.2% 61.4%;
-  --sidebar-foreground: 0 0% 10%;
+  --sidebar-foreground: 0 0% 10.2%; /* negro */
   --sidebar-border: 211 20% 88%;
-  --sidebar-primary: 214 56.6% 52.2%;
-  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-primary: 214 56.6% 52.2%; /* azul */
+  --sidebar-primary-foreground: 0 0% 100%; /* blanco */
   --sidebar-accent: 211 60% 93%;
-  --sidebar-accent-foreground: 0 0% 10%;
-  --sidebar-ring: 214 56.6% 52.2%;
+  --sidebar-accent-foreground: 0 0% 10.2%; /* negro */
+  --sidebar-ring: 214 56.6% 52.2%; /* azul */
 }
 
 @layer base {

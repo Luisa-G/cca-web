@@ -36,7 +36,7 @@ export function HowWeHelp() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-serif mb-6 text-surface-foreground">How we create change</h2>
-          <p className="text-xl text-surface-foreground/70 font-light">
+          <p className="text-xl text-accent font-light">
             Our methodology is rooted in respect, partnership, and long-term commitment.
           </p>
         </motion.div>
@@ -57,7 +57,7 @@ export function HowWeHelp() {
                 <step.icon className="w-10 h-10 text-primary" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-serif mb-4 text-surface-foreground">{step.title}</h3>
-              <p className="text-surface-foreground/60 text-sm leading-relaxed px-4">
+              <p className="text-accent text-sm leading-relaxed px-4">
                 {step.description}
               </p>
             </motion.div>
