@@ -44,7 +44,7 @@ const steps = [
 
 export function Historia() {
   return (
-    <section id="historia" className="pt-26 pb-12 bg-muted">
+    <section id="historia" className="pt-26 pb-12 bg-surface">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-8">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-20"
@@ -53,8 +53,8 @@ export function Historia() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 text-primary">Nuestra historia</h2>
-          <p className="text-xl text-surface-foreground/70 font-light">
+          <h2 className="text-3xl md:text-5xl font-serif mb-6 text-accent">Nuestra historia</h2>
+          <p className="text-xl text-surface-foreground font-light">
             Actuamos con el compromiso de vivir en armonía con la naturaleza y cuidar el planeta con responsabilidad.
           </p>
         </motion.div>
@@ -76,13 +76,13 @@ export function Historia() {
               </div>
               <h3 className="text-xl font-serif mb-4 text-surface-foreground">{step.title}</h3>
               {Array.isArray(step.description) ? (
-                <ul className="list-none list-inside text-sm text-muted-foreground leading-relaxed space-y-2 text-left">
+                <ul className="list-none list-inside text-sm text-surface-foreground leading-relaxed space-y-2 text-left">
                   {step.description.map((point) => (
                     <li key={point}>{point}</li>
                   ))}
                 </ul>
               ) : (
-                <p className="text-surface-foreground/60 text-sm leading-relaxed px-4">
+                <p className="text-surface-foreground text-sm leading-relaxed px-4">
                   {step.description}
                 </p>
               )}

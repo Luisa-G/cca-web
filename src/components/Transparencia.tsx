@@ -12,7 +12,7 @@ export function Transparencia() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-primary mb-6">Transparencia</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-accent mb-6">Transparencia</h2>
             <p className="text-lg text-muted-foreground">Agregar contenido</p>
           </motion.div>
         </div>

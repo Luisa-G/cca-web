@@ -20,17 +20,17 @@ export function Principios() {
     <section id="principios" className="pt-26 bg-surface">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-8">
         <h2 className="text-3xl md:text-4xl font-serif text-surface-foreground mb-6">Principios</h2>
-        <div className="grid grid-cols-1 md:grid-cols-[fr_1fr] rounded-2xl overflow-hidden  bg-card">
+        <div className="grid grid-cols-1 md:grid-cols-[fr_1fr] rounded-2xl overflow-hidden bg-card">
           <div>
             {items.map((item) => (
               <div
                 key={item.title}
-                className="grid grid-cols-[140px_1fr] gap-4 items-start px-8 py-6"
+                className="flex flex-col gap-3 px-8 py-6"
               >
-                <h3 className="text-center self-center text-xl text-foreground underline underline-offset-6">
+                <h3 className="text-xl text-foreground underline underline-offset-6">
                   {item.title}
                 </h3>
-                <p className="text-surface-foreground text-lg leading-relaxed">
+                <p className="text-surface-foreground text-lg leading-relaxed px-10 text-justify">
                   {item.text}
                 </p>
               </div>

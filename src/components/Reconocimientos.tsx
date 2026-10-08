@@ -54,7 +54,7 @@ const people = [
 
 export function Reconocimientos() {
   return (
-    <section id="reconocimientos" className="pt-26 pb-12 bg-secondary">
+    <section id="reconocimientos" className="pt-26 pb-12 bg-muted">
       <div className="container max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <motion.div 
@@ -64,8 +64,8 @@ export function Reconocimientos() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-secondary-foreground mb-6">Premios y reconocimientos</h2>
-            <p className="text-lg text-secondary-foreground">Agregar contenido</p>
+            <h2 className="text-3xl md:text-4xl font-serif text-muted-foreground mb-6">Premios y reconocimientos</h2>
+            <p className="text-lg text-foregroundd">Agregar contenido</p>
           </motion.div>
         </div>
       </div>

@@ -84,9 +84,9 @@ export function Mision() {
         <p className="text-md md:text-lg text-muted-foreground pb-2"><b>La sostenibilidad se construye en el presente, actúa ahora</b></p>
         <p className="text-md md:text-lg text-muted-foreground pb-2"><b>Cultura y Acción Ambiental en Chihuahua</b></p>
         <p className="italic text-md md:text-lg text-muted-foreground pb-2">Juntos tenemos el poder de transformar nuestro entorno y heredar un Chihuahua sostenible a los ciudadanos</p>
-        <p className="text-md md:text-lg text-muted-foreground pb-2">El planeta enfrenta una grave crisis ambiental por la explotación de recursos y la contaminación, situación que también afecta al municipio de Chihuahua, donde cada persona genera en promedio 1.4 kg de basura al día y sólo se recicla el 8%.</p>
-        <p className="text-md md:text-lg text-muted-foreground pb-2">Desde el <b>Centro de Cultura Ambiental de Chihuahua A.C.</b> promovemos la conciencia y acción responsable en el manejo de residuos mediante programas de recolección, capacitación y educación ambiental. Nuestro objetivo es impulsar la gestión sostenible de los residuos sólidos urbanos por parte del Municipio para que favorezca la economía circular, reduzca la contaminación y genere empleos verdes.</p>
-        <p className="text-md md:text-lg text-muted-foreground pb-6">Invitamos a la comunidad a sumarse aplicando las <b>6Rs: rechazar, reducir, reutilizar, reparar, reciclar y reintegrar,</b> para cuidar el planeta y garantizar un futuro más limpio y sostenible.</p>
+        <p className="text-md md:text-lg text-muted-foreground pb-2 text-justify">El planeta enfrenta una grave crisis ambiental por la explotación de recursos y la contaminación, situación que también afecta al municipio de Chihuahua, donde cada persona genera en promedio 1.4 kg de basura al día y sólo se recicla el 8%.</p>
+        <p className="text-md md:text-lg text-muted-foreground pb-2 text-justify">Desde el <b>Centro de Cultura Ambiental de Chihuahua A.C.</b> promovemos la conciencia y acción responsable en el manejo de residuos mediante programas de recolección, capacitación y educación ambiental. Nuestro objetivo es impulsar la gestión sostenible de los residuos sólidos urbanos por parte del Municipio para que favorezca la economía circular, reduzca la contaminación y genere empleos verdes.</p>
+        <p className="text-md md:text-lg text-muted-foreground pb-6 text-justify">Invitamos a la comunidad a sumarse aplicando las <b>6Rs: rechazar, reducir, reutilizar, reparar, reciclar y reintegrar,</b> para cuidar el planeta y garantizar un futuro más limpio y sostenible.</p>
 
         <div className="flex justify-center">
           <Tabs
@@ -115,7 +115,7 @@ export function Mision() {
                     key={tab.id}
                     value={tab.id}
                     forceMount
-                    className="col-start-1 row-start-1 self-center m-0 data-[state=inactive]:invisible data-[state=inactive]:pointer-events-none"
+                    className="col-start-1 row-start-1 self-center m-0 data-[state=inactive]:invisible data-[state=inactive]:pointer-events-none text-justify"
                   >
                     <TabBody content={tab.content} />
                   </TabsContent>
