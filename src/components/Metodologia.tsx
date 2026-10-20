@@ -1,7 +1,7 @@
 export function Metodologia() {
   return (
-    <section id="metodologia" className="pt-26 pb-12 bg-card">
-      <div className="container max-w-7xl mx-auto px-6 md:px-12">
+    <section id="metodologia" className="pt-26 bg-background">
+      <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div 
             className="max-w-2xl"

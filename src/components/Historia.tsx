@@ -53,7 +53,7 @@ export function Historia() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 text-accent">Nuestra historia</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-6 text-accent">Nuestra historia</h2>
           <p className="text-xl text-surface-foreground font-light">
             Actuamos con el compromiso de vivir en armonía con la naturaleza y cuidar el planeta con responsabilidad.
           </p>

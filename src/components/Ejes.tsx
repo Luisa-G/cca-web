@@ -56,7 +56,7 @@ export function Ejes() {
               key={i.title}
               className="group rounded-xl border border-border bg-card overflow-hidden flex flex-col"
             >
-              <div className="aspect-[16/9] overflow-hidden">
+              <div className="aspect-video overflow-hidden">
                 <img
                   src={i.image}
                   alt={i.title}

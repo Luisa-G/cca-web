@@ -65,7 +65,7 @@ export function Reconocimientos() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-serif text-muted-foreground mb-6">Premios y reconocimientos</h2>
-            <p className="text-lg text-foregroundd">Agregar contenido</p>
+            <p className="text-lg text-foreground">Agregar contenido</p>
           </motion.div>
         </div>
       </div>

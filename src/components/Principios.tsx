@@ -19,7 +19,7 @@ export function Principios() {
   return (
     <section id="principios" className="pt-26 bg-surface">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-8">
-        <h2 className="text-3xl md:text-4xl font-serif text-surface-foreground mb-6">Principios</h2>
+        <h2 className="text-3xl md:text-4xl font-serif mb-6 text-surface-foreground">Principios</h2>
         <div className="grid grid-cols-1 md:grid-cols-[fr_1fr] rounded-2xl overflow-hidden bg-card">
           <div>
             {items.map((item) => (

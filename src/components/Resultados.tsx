@@ -51,7 +51,7 @@ export function Resultados() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
             >
-              <div className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground mb-4">
+              <div className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold text-foreground mb-4">
                 <Counter value={metric.value} />
                 <span className="text-primary">{metric.suffix}</span>
               </div>

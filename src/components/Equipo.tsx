@@ -64,7 +64,7 @@ export function Equipo() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-muted-foreground mb-6">Equipo de trabajo</h2>
+            <h2 className="text-3xl md:text-4xl font-serif mb-6 text-muted-foreground">Equipo de trabajo</h2>
             <p className="text-lg text-muted-foreground">El equipo está formado por un consejo directivo integrado por tres personas con experiencia de más de 30 años en el tema de separación y reciclado de materiales y en el cuidado ambiental. Se tiene la colaboración voluntaria de 10 personas que también cuentan con muchos años de experiencia en el cuidado del medio ambiente. El personal operativo se compone de una administradora y dos personas recolectoras.</p>
           </motion.div>
         </div>
