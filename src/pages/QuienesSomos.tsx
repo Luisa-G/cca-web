@@ -6,9 +6,16 @@ import { Resultados } from '@/components/Resultados';
 import { Reconocimientos } from '@/components/Reconocimientos';
 import { Transparencia } from '@/components/Transparencia';
 
-//Falta terminar y reacomodar
 
+
+
+//Falta terminar y reacomodar
 import { CarouselVertical } from '@/components/rpueba';
+
+
+
+
+
 
 export default function QuienesSomos() {
   return (
@@ -22,7 +29,6 @@ export default function QuienesSomos() {
         <Resultados />
         <Reconocimientos />
         <Transparencia />
-        <CarouselVertical />
       </main>
     </div>
   );
