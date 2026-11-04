@@ -10,7 +10,7 @@ const items = [
     description:
       "La capacitación y la sensibilización son una parte fundamental para crear conciencia en las y los chihuahuenses respecto a la responsabilidad con el medio ambiente. Lo hacemos a través de cursos y talleres.",
     image: galleryPlaceholder,
-    link: "/sensibilizacion",
+    link: "/que-hacemos/sensibilizacion",
   },
   {
     title: "Programa “Reciclables Domésticos”",
@@ -18,7 +18,7 @@ const items = [
     description:
       "Toda la familia puede participar en crear un futuro sostenible. La finalidad es mejorar hábitos de consumo de las familias a través de la separación de los materiales reciclables",
     image: galleryPlaceholder,
-    link: "/reciclables-domesticos",
+    link: "/que-hacemos/reciclables-domesticos",
   },
   {
     title: "Programa “Comparte”",
@@ -34,15 +34,15 @@ const items = [
     description:
       "A través de audiencias públicas, mesas técnicas y conversaciones colaborativas, promovemos la creación e implementación de políticas públicas a favor de un  medio ambiente sano para todos los chihuahuenses.",
     image: galleryPlaceholder,
-    link: "/incidencia-politica-publica",
+    link: "/que-hacemos/incidencia-politica-publica",
   },
 ];
 
 export function Ejes() {
   return (
-    <section id="ejes" className="pt-26 pb-12 bg-secondary/20">
+    <section id="ejes" className="pt-26 bg-background">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-2 pb-8">
-        <h2 className="text-2xl md:text-3xl font-serif text-secondary mb-6 text-center">Ejes de trabajo</h2>
+        <h2 className="text-3xl md:text-4xl font-serif text-accent mb-6 text-center">Ejes de trabajo</h2>
         <p className="text-lg text-muted-foreground pb-4">Apoyados en nuestra <b>teoría de cambio de las 6Rs</b>, construimos un presente responsable y sostenible por medio de cuatro ejes:</p>
             <ul className="list-disc list-inside text-lg text-muted-foreground text-bold leading-relaxed space-y-1 pb-10">
               <li><b>Eje 1: Sensibilización y capacitación sobre medio ambiente</b></li>
@@ -50,7 +50,7 @@ export function Ejes() {
               <li><b>Eje 3: Programa "Comparte"</b></li>
               <li><b>Eje 4: Incidencia en política pública</b></li>
             </ul>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((i) => (
             <div
               key={i.title}
@@ -63,10 +63,10 @@ export function Ejes() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
-              <div className="p-6 flex flex-col gap-3 flex-1">
-                <h3 className="text-xl text-secondary">{i.title}</h3>
+              <div className="p-6 flex flex-col gap-3 flex-1 bg-surface">
+                <h3 className="text-2xl text-muted-foreground text-center">{i.title}</h3>
                 {i.intro && (
-                  <p className="text-lg font-semibold text-muted-foreground leading-relaxed">
+                  <p className="text-md font-semibold text-muted-foreground leading-relaxed text-center">
                     {i.intro}
                   </p>
                 )}
@@ -82,12 +82,12 @@ export function Ejes() {
                   </p>
                 )}
                 {i.link && (
-                  <Link
+                  <a
                     href={i.link}
-                    className="mt-auto flex items-right gap-2 text-md font-medium text-primary group-hover:text-primary transition-colors"
+                    className="bg-accent mt-auto self-center inline-flex gap-2 text-md px-4 py-1 border border-accent rounded-full font-medium text-input hover:bg-background hover:text-surface-foreground transition-colors"
                   >
-                    Conoce más <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
-                  </Link>
+                    Conoce más
+                  </a>
                 )}
               </div>
             </div>

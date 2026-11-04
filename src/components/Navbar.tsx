@@ -169,7 +169,7 @@ export default function Navbar() {
           ))}
           <a
             href="mailto:culturambiental.mx@gmail.com"
-            className="bg-muted-foreground text-background text-md px-6 py-3 rounded-full hover:bg-surface hover:text-surface-foreground transition-colors"
+            className="bg-muted-foreground text-background text-md px-6 py-3 rounded-full border-2 border-accent hover:bg-surface hover:text-surface-foreground transition-colors"
           >
             Donar
           </a>
@@ -179,7 +179,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3 md:hidden">
           <a
             href="mailto:culturambiental.mx@gmail.com"
-            className="bg-muted-foreground text-background text-sm px-4 py-2 rounded-full hover:bg-surface hover:text-surface-foreground transition-colors"
+            className="bg-muted-foreground text-background text-sm px-4 py-2 rounded-full font-medium hover:bg-surface hover:text-surface-foreground transition-colors"
           >
             Donar
           </a>
