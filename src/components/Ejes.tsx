@@ -1,6 +1,3 @@
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'wouter';
 import galleryPlaceholder from '@/assets/images/gallery-2.png';
 
 const items = [
@@ -84,7 +81,7 @@ export function Ejes() {
                 {i.link && (
                   <a
                     href={i.link}
-                    className="bg-accent mt-auto self-center inline-flex gap-2 text-md px-4 py-1 border border-accent rounded-full font-medium text-input hover:bg-background hover:text-surface-foreground transition-colors"
+                    className="bg-accent mt-auto self-center inline-flex gap-2 text-md px-4 py-1 border border-accent rounded-full font-medium text-input hover:bg-input hover:text-surface-foreground transition-colors"
                   >
                     Conoce más
                   </a>

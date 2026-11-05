@@ -61,11 +61,9 @@ const navLinks: NavLink[] = [
     label: "Toma Acción",
     href: "/toma-accion",
     children: [
-      { label: "Centros de acopio", href: "/toma-accion#acopio" },
-      { label: "Unirse a programas", href: "/toma-accion#programas" },
       { label: "Donar", href: "/toma-accion#donar" },
-      { label: "Cuida el medio ambiente", href: "/toma-accion#medio-ambiente" },
-      { label: "Cursos", href: "/toma-accion#cursos" },
+      { label: "Centros de acopio", href: "/toma-accion#acopio" },
+      { label: "Acciones conjuntas", href: "/toma-accion#acciones-conjuntas" },
     ],
   },
   {

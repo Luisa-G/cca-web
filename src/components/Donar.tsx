@@ -54,7 +54,7 @@ const people = [
 
 export function Donar() {
   return (
-    <section id="donar" className="pt-26 pb-12 bg-muted/30">
+    <section id="donar" className="pt-26 pb-12 bg-background">
       <div className="container max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <motion.div 
@@ -64,7 +64,7 @@ export function Donar() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-secondary mb-6">Donar</h2>
+            <h2 className="text-3xl md:text-4xl font-serif mb-6 text-muted-foreground">Donar</h2>
             <p className="text-lg text-muted-foreground">Agregar contenido</p>
           </motion.div>
         </div>
