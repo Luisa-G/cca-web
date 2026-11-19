@@ -1,7 +1,6 @@
 import { Aliados } from '@/components/Aliados';
-import { NuestrasInv } from '@/components/NuestrasInv';
+import { Investigaciones } from '@/components/Investigaciones';
 import { MaterialAdicional } from '@/components/MaterialAdicional';
-import { InvExternas } from '@/components/InvExternas';
 import { CasosExito } from '@/components/CasosExito';
 
 export default function AprendeMas() {
@@ -9,10 +8,9 @@ export default function AprendeMas() {
     <div className="min-h-screen pt-8 bg-secondary">
       <main>
         <h1 className="text-3xl md:text-4xl text-secondary-foreground text-center bg-secondary pb-6 text-shadow-xs text-shadow-muted-foreground">Aprende más</h1>
+        <Investigaciones />
         <Aliados />
-        <NuestrasInv />
         <MaterialAdicional />
-        <InvExternas />
         <CasosExito />
       </main>
     </div>
