@@ -39,8 +39,11 @@ export function Resultados() {
   ];
 
   return (
-    <section id="resultados" className="py-24 bg-card">
-      <div className="container max-w-7xl mx-auto px-6 md:px-12">
+    <section id="resultados" className="pt-26 bg-background">
+      <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-12">
+        <h2 className="text-3xl md:text-4xl font-serif text-accent mb-6">
+          Resultados
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
           {metrics.map((metric, idx) => (
             <motion.div 

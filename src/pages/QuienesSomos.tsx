@@ -6,17 +6,6 @@ import { Resultados } from '@/components/Resultados';
 import { Reconocimientos } from '@/components/Reconocimientos';
 import { Transparencia } from '@/components/Transparencia';
 
-
-
-
-//Falta terminar y reacomodar
-import { CarouselVertical } from '@/components/rpueba';
-
-
-
-
-
-
 export default function QuienesSomos() {
   return (
     <div className="min-h-screen pt-8 bg-secondary">

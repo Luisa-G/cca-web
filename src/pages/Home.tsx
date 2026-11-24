@@ -1,11 +1,10 @@
-import { Hero } from '@/components/Hero';
+import { HeroBanner } from '@/components/HeroBanner';
+import { MisionHome } from '@/components/MisionHome';
+import { SeisRsHome } from '@/components/SeisRsHome';
+import { EjesHome } from '@/components/EjesHome';
+import { TomaAccionHome } from '@/components/TomaAccionHome';
+import { Referencias } from '@/components/Referencias';
 import { ImpactMetrics } from '@/components/ImpactMetrics';
-import { Programs } from '@/components/Programs';
-import { Storytelling } from '@/components/Storytelling';
-import { HowWeHelp } from '@/components/HowWeHelp';
-import { Gallery } from '@/components/Gallery';
-import { Testimonials } from '@/components/Testimonials';
-import { EmotionalCTA } from '@/components/EmotionalCTA';
 
 
 
@@ -13,14 +12,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <main>
-        <Hero />
+        <HeroBanner />
+        <MisionHome />
+        <SeisRsHome />
+        <EjesHome />
         <ImpactMetrics />
-        <Programs />
-        <Storytelling />
-        <HowWeHelp />
-        <Gallery />
-        <Testimonials />
-        <EmotionalCTA />
+        <TomaAccionHome />
+        <Referencias />
       </main>
     </div>
   );

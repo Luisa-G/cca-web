@@ -76,7 +76,7 @@ function TabBody({ content }: { content: (typeof tabs)[number]["content"] }) {
 
 export function Mision() {
   return (
-    <section id="mision2" className="pt-26 bg-background">
+    <section id="mision" className="pt-26 bg-background">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-8">
         <h2 className="text-3xl md:text-4xl font-serif text-accent mb-6">
           Mensaje de las consejeras
