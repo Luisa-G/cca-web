@@ -6,19 +6,19 @@ const steps = [
     icon: Lightbulb,
     title: "2022",
     description: [
-      "Investigación de buenas prácticas sobre residuos sólidos urbanos (basura común) en Chihuahua y otros estados de  México.",
-      "Inicio del programa “Reciclables Domésticos” con recolección de materiales casa por casa en Chihuahua Capital.",
+      <>
+        Inicia “<strong>Reciclables Domésticos</strong>” con recolección de materiales casa por casa en
+        Chihuahua Capital.
+      </>,
     ],
   },
   {
     icon: Heart,
     title: "2023",
     description: [
-      "Constitución legal como Asociación sin fines de lucro y como donataria autorizada para emitir recibos deducibles de impuestos",
-      "Nos capacitamos para en en el Centro de Fortalecimiento (CFOSC)",
-      "Creamos grupos participativos para analizar la gestión de residuos sólidos urbanos en Chihuahua",
-      "Premio segundo lugar en “Emprende por un Cambio Social” otorgado por la Asociación Celiderh",
-      "Premio Municipal del Cuidado al Medio Ambiente en Chihuahua Capital",
+      <>
+        Nos constituimos legalmente como <strong>Asociación sin fines de lucro</strong>, creamos <strong>grupos participativos</strong> para evaluar el estado de los RSU y recibimos nuestros primeros premios.
+      </>,
     ],
   },
   {
@@ -77,8 +77,8 @@ export function Historia() {
               <h3 className="text-xl font-serif mb-4 text-surface-foreground">{step.title}</h3>
               {Array.isArray(step.description) ? (
                 <ul className="list-none list-inside text-sm text-surface-foreground leading-relaxed space-y-2 text-left">
-                  {step.description.map((point) => (
-                    <li key={point}>{point}</li>
+                  {step.description.map((point, i) => (
+                    <li key={i}>{point}</li>
                   ))}
                 </ul>
               ) : (

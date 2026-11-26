@@ -173,7 +173,7 @@ export default function Navbar() {
             </div>
           ))}
           <a
-            href="mailto:culturambiental.mx@gmail.com"
+            href="/toma-accion#donar"
             className="bg-muted-foreground text-background text-md px-6 py-3 rounded-full border-2 border-accent hover:bg-surface hover:text-surface-foreground transition-colors"
           >
             Donar
@@ -183,7 +183,7 @@ export default function Navbar() {
         {/* Mobile: botón Donar + hamburguesa */}
         <div className="flex items-center gap-3 md:hidden">
           <a
-            href="mailto:culturambiental.mx@gmail.com"
+            href="/toma-accion#donar"
             className="bg-muted-foreground text-background text-sm px-4 py-2 rounded-full font-medium hover:bg-surface hover:text-surface-foreground transition-colors"
           >
             Donar

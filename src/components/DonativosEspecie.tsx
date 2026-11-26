@@ -1,22 +1,20 @@
-// TODO: reemplazar con la lista real de necesidades de CCA
+
 const donativos: string[] = [
-  "Material de papelería y oficina",
-  "Herramientas de jardinería",
-  "Plantas y semillas nativas",
-  "Equipo de cómputo en buen estado",
-  "Materiales para talleres y actividades educativas",
-  "Contenedores y material para acopio",
+  "Equipo de seguridad (guantes, chalecos, zapatos de seguridad, mandiles, etc.)",
+  "Contenedores: Rejas de plástico, maxi costales",
+  "Gasolina o vales de combustible",
+  "Artículos en buen estado que podamos vender o intercambiar como parte de nuestras estrategias de procuración de fondos",
 ];
 
 export function DonativosEspecie() {
   return (
-    <section id="donativos-especie" className="pt-26 bg-background">
+    <section id="donativos-especie" className="bg-background">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-2 pb-8">
         <h2 className="text-3xl md:text-4xl font-serif text-accent mb-6 text-center">
           Donativos en especie
         </h2>
         <p className="text-md md:text-lg text-muted-foreground pb-4 text-center">
-          Si prefieres apoyar con objetos o materiales, estos son los que más necesitamos:
+          Apóyanos con insumos que necesitamos para operar, como:
         </p>
 
         <div className="mx-auto max-w-3xl rounded-md border p-5 bg-muted">

@@ -24,7 +24,7 @@ export function DonativosEconomicos() {
   };
 
   return (
-    <section id="donativos-economicos" className="pt-26 bg-background">
+    <section id="donativos-economicos" className="bg-background">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 pt-2 pb-12">
         <h2 className="text-3xl md:text-4xl font-serif text-accent mb-6 text-center">
           Donativos económicos
@@ -64,11 +64,20 @@ export function DonativosEconomicos() {
         </div>
 
         <p className="text-md text-muted-foreground pt-6 text-center">
-          Somos donataria autorizada y podemos emitir recibos deducibles de impuestos. Escríbenos a{" "}
+          Contáctanos para más información al{" "}
+          <a href="tel:+526142154235" className="font-bold underline">
+            614 215 4235
+          </a>{" "}
+          o al correo{" "}
           <a href="mailto:culturambiental.mx@gmail.com" className="font-bold underline">
             culturambiental.mx@gmail.com
           </a>{" "}
-          con tu comprobante de pago para solicitarlo.
+        </p>
+        <p className="text-md text-muted-foreground text-center">
+          Si deseas <b>comprobante fiscal</b>, envíanos tu <b>cédula de situación fiscal</b> al mismo correo o teléfono.
+        </p>
+        <p className="text-md text-muted-foreground pt-3 text-center">
+          Somos donataria autorizada y podemos emitir recibos deducibles de impuestos.
         </p>
       </div>
     </section>
