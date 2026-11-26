@@ -47,15 +47,7 @@ const navLinks: NavLink[] = [
     href: "/que-hacemos",
     children: [
       { label: "Metodología 6 Rs", href: "/que-hacemos#metodologia" },
-      {
-        label: "Ejes de trabajo",
-        href: "/que-hacemos#ejes",
-        children: [
-          { label: "Eje 1: Sensibilización y capacitación", href: "/que-hacemos#sensibilizacion" },
-          { label: "Eje 2: Reciclables Domésticos", href: "/que-hacemos#reciclables" },
-          { label: "Eje 3: Comparte", href: "/que-hacemos#comparte" },
-          { label: "Eje 4: Incidencia en política pública", href: "/que-hacemos#politica" },
-        ],
+      { label: "Ejes de trabajo", href: "/que-hacemos#ejes",
       },
     ],
   },

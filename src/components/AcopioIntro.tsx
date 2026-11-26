@@ -1,5 +1,4 @@
-// TODO: reemplazar por la URL real (mapa, página de ubicaciones, etc.)
-const UBICACIONES_URL = "#";
+import { Link } from "wouter";
 
 export function AcopioIntro() {
   return (
@@ -18,14 +17,12 @@ export function AcopioIntro() {
         </p>
 
         <div className="flex justify-center">
-          <a
-            href={UBICACIONES_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/toma-accion/centros-de-acopio"
             className="bg-accent inline-flex gap-2 text-md px-4 py-1 border border-accent rounded-full font-medium text-input hover:bg-input hover:text-surface-foreground transition-colors"
           >
             Ver ubicaciones
-          </a>
+          </Link>
         </div>
       </div>
     </section>

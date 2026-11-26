@@ -9,6 +9,7 @@ import QueHacemos from "@/pages/QueHacemos";
 import TomaAccion from "@/pages/TomaAccion";
 import AprendeMas from "@/pages/AprendeMas";
 import AvisoPrivacidad from "@/pages/AvisoPrivacidad";
+import CentrosAcopio from "@/pages/CentrosAcopio";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ function Router() {
         <Route path="/toma-accion" component={TomaAccion} />
         <Route path="/aprende-mas" component={AprendeMas} />
         <Route path="/aviso-privacidad" component={AvisoPrivacidad} />
+        <Route path="/toma-accion/centros-de-acopio" component={CentrosAcopio} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

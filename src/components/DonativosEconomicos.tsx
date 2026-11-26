@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Copy, Check } from "lucide-react";
 
-// TODO: reemplazar con los datos bancarios reales de CCA Chihuahua, A.C.
 const datos: { label: string; value: string; copiable?: boolean }[] = [
   { label: "Beneficiario", value: "Centro de Cultura Ambiental de Chihuahua, A.C." },
   { label: "Banco", value: "[BANCO]" },
