@@ -16,6 +16,8 @@ function useNavigateToHash() {
         const el = document.getElementById(hash);
         if (el) el.scrollIntoView({ behavior: "smooth" });
       }, 100);
+    } else {
+      window.scrollTo(0,0); // sin hash: siempre al inicio de la página
     }
   };
 }
@@ -103,7 +105,10 @@ export default function Navbar() {
   return (
     <header className="w-full bg-background shadow-sm sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/">
+        <Link
+          href="/"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <img
             src={logoNavbar}
             alt="CCA Chihuahua"
@@ -115,6 +120,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-6">
           <Link
             href="/"
+            onClick={() => window.scrollTo(0, 0)}
             className={`text-md font-medium transition-colors ${
               location === "/"
                 ? "bg-surface text-surface-foreground rounded-full px-1"
@@ -127,6 +133,7 @@ export default function Navbar() {
             <div key={link.href} className="relative group">
               <Link
                 href={link.href}
+                onClick={() => window.scrollTo(0, 0)}
                 className={`text-md font-medium transition-colors ${
                   location === link.href || location.startsWith(link.href + "/")
                     ? "bg-surface text-surface-foreground rounded-full px-1"
@@ -201,7 +208,7 @@ export default function Navbar() {
             className={`block text-sm font-medium py-1 transition-colors ${
               location === "/" ? "bg-surface text-surface-foreground" : "text-surface-foreground"
             }`}
-            onClick={() => setMenuOpen(false)}
+            onClick={() => { window.scrollTo(0, 0); setMenuOpen(false); }}
           >
             Inicio
           </Link>
