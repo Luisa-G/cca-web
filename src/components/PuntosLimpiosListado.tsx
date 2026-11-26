@@ -2,18 +2,71 @@ import { MapaEmbed } from "@/components/MapaEmbed";
 
 interface PuntoLimpio {
   nombre: string;
-  // Opcional: si no hay dirección, la tarjeta se muestra solo con el nombre.
   direccion?: string;
+  texto?: string;
 }
 
-// TODO: reemplazar por los puntos limpios reales.
 const PUNTOS: PuntoLimpio[] = [
-  { nombre: "Punto limpio ejemplo 1", direccion: "Av. Division del Norte 400, Chihuahua, Chih." },
-  { nombre: "Punto limpio ejemplo 2" },
-  { nombre: "Punto limpio ejemplo 3", direccion: "Calle Aldama 500, Chihuahua, Chih." },
-  { nombre: "Punto limpio ejemplo 4" },
-  { nombre: "Punto limpio ejemplo 5" },
-  { nombre: "Punto limpio ejemplo 6", direccion: "Av. Independencia 600, Chihuahua, Chih." },
+  {
+    nombre: "Presa El Rejón",
+    texto: "Ubicado en la entrada principal del parque",
+  },
+  {
+    nombre: "Distrito 1",
+    texto: "Ubicado sobre el Periférico de la Juventud casi esquina con Francisco Villa",
+  },
+  {
+    nombre: "Plaza Perea",
+    texto: "Ubicado en Trías y 21a",
+  },
+  {
+    nombre: "Plaza Libertad",
+  },
+  {
+    nombre: "Sierra Azul",
+    texto: "",
+    direccion: "",
+  },
+  {
+    nombre: "Distrito TEC",
+    texto: "",
+    direccion: "",
+  },
+  {
+    nombre: "Centro",
+    texto: "",
+    direccion: "",
+  },
+  {
+    nombre: "Parque El Platanito",
+    texto: "",
+    direccion: "",
+  },
+  {
+    nombre: "Ciudad Deportiva",
+    texto: "",
+    direccion: "",
+  },
+  {
+    nombre: "Palomar",
+    texto: "",
+    direccion: "",
+  },
+  {
+    nombre: "UACH Campus II",
+    texto: "",
+    direccion: "",
+  },
+  {
+    nombre: "Deportiva",
+    texto: "",
+    direccion: "",
+  },
+  {
+    nombre: "Elías Müller y Avenida Mirador",
+    texto: "",
+    direccion: "",
+  },
 ];
 
 export function PuntosLimpiosListado() {
@@ -31,9 +84,14 @@ export function PuntosLimpiosListado() {
               className="rounded-2xl overflow-hidden border border-accent/20 bg-background shadow-xs"
             >
               <div className="p-5">
-                <h3 className="text-xl font-serif text-secondary">{punto.nombre}</h3>
+                <h3 className="text-xl font-serif text-muted-foreground">{punto.nombre}</h3>
+                {punto.texto && (
+                  <p className="text-md text-muted-foreground mt-3 whitespace-pre-line">
+                    {punto.texto}
+                  </p>
+                )}
                 {punto.direccion && (
-                  <p className="text-md text-muted-foreground mt-1">
+                  <p className="text-sm font-bold text-muted-foreground mt-1">
                     {punto.direccion}
                   </p>
                 )}

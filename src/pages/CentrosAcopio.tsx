@@ -12,7 +12,13 @@ export default function CentrosAcopio() {
   return (
     <div className="min-h-screen pt-8 bg-primary">
       <main>
-        <h1 className="text-3xl md:text-4xl text-secondary-foreground text-center bg-primary pb-6 text-shadow-xs text-shadow-muted-foreground">Centros de acopio y puntos limpios</h1>
+        <h1 className="text-3xl md:text-4xl text-secondary-foreground text-center bg-primary pb-6 text-shadow-xs text-shadow-muted-foreground">Centros de acopio y Puntos limpios</h1>
+        <p className="text-lg md:text-xl text-muted-foreground pt-6 text-center bg-background">
+          Ya separas material valorizable ¿pero no sabes a dónde llevarlo?
+        </p>
+        <p className="text-lg md:text-xl text-muted-foreground text-center bg-background">
+          Aquí te compartimos algunas opciones:
+        </p>
         <CentrosAcopioListado />
         <PuntosLimpiosListado />
       </main>
